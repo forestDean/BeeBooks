@@ -1,0 +1,13 @@
+/* FOOTER style */
+
+.footer {
+  min-height: 55px;
+  /* margin-top: 40px; */
+  /* background: darkolivegreen; */
+  /* border: 1px solid darkolivegreen;
+  border-top: 0;
+  border-left: 0; */
+  color: darkolivegreen;
+  /* box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
+  filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4)); */
+}

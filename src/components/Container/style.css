@@ -1,0 +1,13 @@
+/* CONTAINER style */
+
+.container {
+  width: 1000px !important;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  background-color:white;
+  height: auto;
+  /* height: auto; */
+  box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
+  filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
+}

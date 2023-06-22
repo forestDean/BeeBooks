@@ -1,0 +1,25 @@
+/* HOMEPAGE style */
+:root {
+    --portraitSize: 300px
+}
+
+.row {
+    height:auto;
+}
+#portrait {
+    height: var(--portraitSize);
+    width: var(--portraitSize);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    margin-left: 60px;
+}
+
+#portraitCol {
+border: 1px dashed red;
+background-color: red ;
+}
+
+#summary {
+    border: 1px dashed green;
+}
