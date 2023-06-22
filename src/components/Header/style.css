@@ -1,0 +1,13 @@
+/* HEADER style */
+
+h1{
+    margin-left: 60px;
+}
+
+
+h4 {
+    float: right;
+    /* text-align: right; */
+    margin-right: 25px;
+    font-family: Lato;
+}
