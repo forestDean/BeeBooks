@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import React, { useState, useRef } from 'react';
-import "./style.css";
+import "./search.css";
 
 
 export default function ContactForm() {
