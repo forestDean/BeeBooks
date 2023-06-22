@@ -1,0 +1,10 @@
+/* HOMEPAGE style */
+.book {
+    width: 100%;
+}
+
+.storyTitle{
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
