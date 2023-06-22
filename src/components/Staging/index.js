@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "./staging.module.css";
-import Row from "../../components/Row";
-import Column from "../../components/Column";
-import Search from "../../components/Search";
-import axios from 'axios';
+import Row from "../Row";
+import Column from "../Column";
+import Search from "../Search";
 
 const Staging = () => {
     return (  
