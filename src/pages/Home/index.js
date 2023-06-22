@@ -1,8 +1,9 @@
 import React from "react";
 import "./home.module.css";
-import logo from '../../assets/images/logo.jpg';
+import logo from '../../assets/images/bee-logo.png';
 import Row from "../../components/Row";
 import Column from "../../components/Column";
+import BookApi from "../../components/BookApi";
 
 const Home = () => {
     return (  
@@ -12,6 +13,7 @@ const Home = () => {
               <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
               </header>
+              <BookApi />
             </div>
 
             </Column>
