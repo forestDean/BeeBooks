@@ -1,34 +1,42 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 // import Row from "../../components/Row";
 // import Column from "../../components/Column";
 
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 // LOGO DESIGN
-// import logo from '../../assets/images/beelogo.png';
+import logo from '../../assets/images/beelogo.png';
 
 
 const Header = () => {
 return (  
     <Navbar expand="lg" className="bg-body-tertiary">
 
-    <Container>
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Container className="navbarMenu">
+      <Navbar.Brand href="/"> 
+      <img 
+           src={logo}
+           alt="bee"
+     className='logo'>
+      </img> 
+      BeeBooks</Navbar.Brand>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <Nav.Link href="#contact">Contact Us</Nav.Link>
+        
+        <div className='links'>
+	          <Link to="/">Home</Link>
+	            <Link to="about">About</Link>
+	              <Link to="text">Text</Link>
+	           <Link to="contact">Contact</Link>
+	              </div>
 
          
-        </Nav>
+       
       </Navbar.Collapse>
     </Container>
   </Navbar>
