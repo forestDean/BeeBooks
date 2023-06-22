@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./header.css";
 import Row from "../../components/Row";
 import Column from "../../components/Column";
 
@@ -16,7 +16,7 @@ function Header(props) {
             </Row>
             <Row>
                 <Column size="md-12">
-                    <h1>Books</h1>
+                    <h1>BeeBooks</h1>
                 </Column>
             </Row>
         </header>

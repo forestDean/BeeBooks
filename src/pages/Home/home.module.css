@@ -1,0 +1,15 @@
+/* HOMEPAGE style */
+:root {
+    --imageSize: 300px
+}
+
+.row {
+    height: auto;
+}
+#image {
+    height: var(--imageSize);
+    width: var(--imageSize);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
