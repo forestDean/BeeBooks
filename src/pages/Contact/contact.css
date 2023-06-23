@@ -1,0 +1,44 @@
+:root{
+	--blue: #A8D1D1;
+	--lightblue: #DFebeb;
+	--green: #DAE5D0;
+	--beige: #F9EBC8;
+	--blue3: #A0BCC2;
+
+}
+
+
+.containerForm{
+	width: 500px;
+	padding: 30px;
+	background: var(--blue);
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+	border-radius: 10%;
+}
+
+
+.form-control{
+	background-color:  var(--lightblue);
+}
+.button{
+	background-color: var(--beige);
+
+}
+
+.titleC{
+	font-size: 24px;
+	font-family: sans-serif;
+	color: white;
+	margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.containerForm{
+		width: 350px;
+	}
+  
+  }
