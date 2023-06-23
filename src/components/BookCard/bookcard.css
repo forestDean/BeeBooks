@@ -1,40 +1,22 @@
-.projectcard {
-    background: #fff;
-    border-radius: 8px;
-    /* border: 0; */
-    height: 300px;
-    /* width: 400px ; */
-    margin: 1rem;
-    /* margin-left: 16px; */
-    position: relative;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-    text-align: left;
-    color: white !important;
-    /* margin: 0 -16px !important; */
-  }
-  
-  .projectcard > .img-container {
-    height: 100%;
-    overflow: hidden;
-    text-align: center;
-    background:darkolivegreen;
-  }
+/* BOOKCARD styling */
 
-  .projectcard > .img-container > img {
-    /* width: 60% */
-  }
-  
-  .projectcard > .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 18px;
-  }
-  
-  .projectcard > .content > ul {
-    list-style-type: none;
-  }
-  
-  .projectcard > .content > ul > li {
-    margin-top: 18px;
-  }
-  
+article {
+  font-size: 18px;
+  border:1px solid rgb(207, 206, 206);
+  border-radius: 15px;
+  padding: 30px 40px;
+  background-color: white;
+  box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
+  filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
+}
+
+#description {
+  font-style: italic;
+
+}
+
+article >img {
+  margin-bottom: 30px;;
+  box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
+  filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
+}

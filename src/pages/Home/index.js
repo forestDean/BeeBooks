@@ -8,7 +8,7 @@ import BookApi from "../../components/BookApi";
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import image from '../../assets/images/image1.jpg';
+// import image from '../../assets/images/image1.jpg';
 
 
 const Home = () => {
