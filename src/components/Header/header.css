@@ -1,5 +1,15 @@
 /* HEADER style */
 
+:root{
+	--blue: #A8D1D1;
+	--lightblue: #DFebeb;
+	--green: #DAE5D0;
+	--beige: #F9EBC8;
+	--blue3: #A0BCC2;
+
+}
+
+
 .logo{
     width: 50px;
 }
@@ -7,7 +17,7 @@
 .navbarMenu{
     width: 100%;
     height: 70px;
-    background: yellow;
+    background: var(--blue);
 }
 
 .links {
@@ -28,5 +38,9 @@
   
 .navbar a:hover{ 
     transition: all .5s;
-    color: white;
+    color: var(--lightblue);
+  }
+
+  .navbar-collapse{
+    background-color: var(--blue);
   }

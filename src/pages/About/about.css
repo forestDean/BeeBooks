@@ -1,12 +1,25 @@
-/* HOMEPAGE style */
+/* ABOUT US style */
+:root{
+	--blue: #A8D1D1;
+	--lightblue: #DFebeb;
+	--green: #DAE5D0;
+	--beige: #F9EBC8;
+	--blue3: #A0BCC2;
+
+}
+
+
 .book {
     width: 100%;
+    border-radius: 10%;
 }
 
 .storyTitle{
     font-size: 30px;
     text-align: left;
     margin-bottom: 30px;
+    font-family: sans-serif;
+    color: var(--blue);
 }
 
 .info{
@@ -32,7 +45,7 @@ height: 90%;
     
 }
 
-.cards {
+.card-containers {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -43,7 +56,7 @@ height: 90%;
     padding: 100px 50px;
   }
   
- .cards .card {
+ .card-containers .card {
     position: relative;
     display: flex;
     justify-content: center;
@@ -132,22 +145,28 @@ height: 90%;
 
 
   @media (max-width: 480px) {
-    .cards .card {
+    .card-containers .card {
         width: 230px;
         border-radius: 15px;
         margin-top: 30%;
     }
   
-    .cards .card .img-box {
+    .card-containers .card .img-box {
         width: 185px;
         border-radius: 10px;
     }
   
-    .cards .card .content p {
+    .ccard-containers .card .content p {
         font-size: 0.8rem;
     }
   
-    .cards .card .content a {
+    .card-containers .card .content a {
         font-size: 0.9rem;
     }
+
+    .book {
+      width: 60%;
+      border-radius: 10%;
+  }
+
   }

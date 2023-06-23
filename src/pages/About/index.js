@@ -53,11 +53,12 @@ storytelling and a desire to ignite the spark of imagination in every child's he
 
 
       <h3 className="valueT"> Our Values</h3>
-      <div className="cards">
-     
+      <div className="card-containers">
+
         
-
-
+     
+  
+ {/* CARD1 */}
         <div className="card" >
         <div className="img-box">
         <img className='book' src={child1} alt="child"/>
