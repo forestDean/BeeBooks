@@ -7,7 +7,7 @@ const BookCard = (props) => {
         <div id="bookInfo">
             <article className="bookCard mb-5 w-50 mx-auto" id={props.id}>
                 <h3>{props.title}</h3>
-                <p>by {props.authors}</p>
+                <p>by {props.author}</p>
                 {props.image}
                 <p id="description" className="fst-italic">{props.description}</p>
                 <small id="isbn">ISBN: {props.isbn}</small>
