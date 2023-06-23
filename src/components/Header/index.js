@@ -4,7 +4,9 @@ import "./header.css";
 // import Row from "../../components/Row";
 // import Column from "../../components/Column";
 
+
 import Container from 'react-bootstrap/Container';
+
 import Navbar from 'react-bootstrap/Navbar';
 
 // LOGO DESIGN
@@ -12,8 +14,9 @@ import logo from '../../assets/images/beelogo.png';
 
 
 const Header = () => {
-return (  
+return (
     <Navbar expand="lg" className="bg-body-tertiary">
+
 
     <Container className="navbarMenu">
       <Navbar.Brand href="/"> 
@@ -23,6 +26,7 @@ return (
      className='logo'>
       </img> 
       BeeBooks</Navbar.Brand>
+
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
