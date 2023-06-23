@@ -12,7 +12,7 @@ const Contact = () => {
     <div className="Contact">
 
 <div className="containerForm">
-      <h2 className="mb-3">Contact Us</h2>
+      <h2 className="titleC">Contact Us</h2>
       <form >
         <div className="mb-3">
           <label className="form-label" htmlFor="name">
@@ -32,9 +32,9 @@ const Contact = () => {
           </label>
           <textarea className="form-control" id="message" required />
         </div>
-        <button className="btn btn-danger" type="submit">
       
-        </button>
+        <input type="submit" value="Send"className="button"/>
+
       </form>
     </div>
 </div>
