@@ -1,35 +1,22 @@
-import React, { Component } from "react";
 import "./bookcard.css";
 
+const BookCard = (props) => {
 
-class BookCard extends Component {
-    render() {
-        return (  
-            <div className="row bookcard col-11 mx-auto">
-                <div className="img-container col-7">
-                    <img alt={this.props.title} src={this.props.image} />
-                </div>
-                <div className="content col-5">
-                <ul>
-                    <li>
-                        <h2>{this.props.title}</h2> 
-                    </li>
-                    <li>
-                        <strong>Blah</strong> {this.props.urlDeployed}
-                    </li>
-                    <li>
-                        <strong>Blah</strong> {this.props.urlDeployed}
-                    </li>
-                    <li>
-                        <strong>Blah</strong> {this.props.urlGithub}
-                    </li>
-                </ul>
-                </div>
-            </div>
- 
-        );
-    }
+    return (
+
+        <div id="bookInfo">
+            <article className="bookCard mb-5 w-50 mx-auto" id={props.id}>
+                <h3>{props.title}</h3>
+                <p>by {props.authors}</p>
+                {props.image}
+                <p id="description" className="fst-italic">{props.description}</p>
+                <small id="isbn">ISBN: {props.isbn}</small>
+                <button type="button" className="btn w-100 btn-outline-primary my-4">SHOP</button>
+            </article>
+        </div> 
+
+    );
+
 }
-
 
 export default BookCard;
