@@ -4,19 +4,23 @@ import "./home.module.css";
 import Row from "../../components/Row";
 import Column from "../../components/Column";
 import BookApi from "../../components/BookApi";
+import Search from "../../components/Search";
 
 
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 // import image from '../../assets/images/image1.jpg';
 
 
 const Home = () => {
     return (  
-      <div className="jumbotron"> 
-      <h3> Find The Right Book For You </h3>
+      <div className=""> 
+        <h3> Find The Right Book For You </h3>
+         <Row className="row"> 
+            <Column size="md-12">
+              <Search />
+            </Column>
+          </Row>
       
-          <Row className="jumbotron1">   
+          <Row className="row">   
                
             <Column size="md-12">
             <div className="App">
@@ -25,21 +29,11 @@ const Home = () => {
               </header>
               <BookApi />
             </div>
-
             </Column>
+
           </Row>
 
-             {/* SEARCH BAR */}
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-           </div>
+      </div>
     );
 }
  
