@@ -2,7 +2,7 @@ import React from "react";
 import '../About/about.css'
 
 import { Container} from "react-bootstrap";
-import book from '../../assets/images/image4.png'
+import beebook from '../../assets/images/image4.png'
 import child1 from '../../assets/images/child1.png'
 import child2 from '../../assets/images/child2.png'
 import child3 from '../../assets/images/child3.png'
@@ -17,7 +17,7 @@ return (
     <div className="row align-items-center" id="pannel">
         <div className="col-lg-5 order-lg-2">
           <div className="p-5">
-            <img className='book' src={book} alt="book image"/>
+            <img className='book' src={beebook} alt="book cover"/>
           </div>
         </div>
         <div className="col-lg-7 order-lg-1">
