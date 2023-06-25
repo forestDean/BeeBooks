@@ -1,0 +1,67 @@
+5:22:22 PM: Failed during stage 'Install dependencies': dependency_installation script returned non-zero exit code: 1
+5:22:15 PM: build-image version: c11c0eb9939c949586b0f78302107908b668a11e (focal)
+5:22:15 PM: buildbot version: c11c0eb9939c949586b0f78302107908b668a11e
+5:22:15 PM: Building without cache
+5:22:15 PM: Starting to prepare the repo for build
+5:22:15 PM: No cached dependencies found. Cloning fresh repo
+5:22:15 PM: git clone --filter=blob:none https://github.com/forestDean/project2
+5:22:15 PM: Preparing Git Reference refs/heads/main
+5:22:17 PM: Starting to install dependencies
+5:22:17 PM: Python version set to 3.8
+5:22:17 PM: Attempting Ruby version 2.7.2, read from environment
+5:22:18 PM: Using Ruby version 2.7.2
+5:22:18 PM: Started restoring cached go cache
+5:22:18 PM: Finished restoring cached go cache
+5:22:18 PM: go version go1.19.10 linux/amd64
+5:22:18 PM: Using PHP version 8.0
+5:22:19 PM: v18.16.0 is already installed.
+5:22:20 PM: Now using node v18.16.0 (npm v9.5.1)
+5:22:20 PM: Enabling Node.js Corepack
+5:22:20 PM: Started restoring cached build plugins
+5:22:20 PM: Finished restoring cached build plugins
+5:22:20 PM: Started restoring cached corepack dependencies
+5:22:20 PM: Finished restoring cached corepack dependencies
+5:22:20 PM: No npm workspaces detected
+5:22:20 PM: Started restoring cached node modules
+5:22:20 PM: Finished restoring cached node modules
+5:22:20 PM: Installing npm packages using npm version 9.5.1
+5:22:21 PM: npm ERR! code ERESOLVE
+5:22:21 PM: npm ERR! ERESOLVE could not resolve
+5:22:21 PM: npm ERR!
+5:22:21 PM: npm ERR! While resolving: @testing-library/react@13.4.0
+5:22:21 PM: npm ERR! Found: react@16.14.0
+5:22:21 PM: npm ERR! node_modules/react
+5:22:21 PM: npm ERR!   react@^16.14.0 from the root project
+5:22:21 PM: npm ERR!   peer react@^0.14 || ^15.0.0 || ^16.0.0-alpha from airbnb-prop-types@2.16.0
+5:22:21 PM: npm ERR!   node_modules/airbnb-prop-types
+5:22:21 PM: npm ERR!     airbnb-prop-types@^2.16.0 from enzyme-adapter-utils@1.14.1
+5:22:21 PM: npm ERR!     node_modules/enzyme-adapter-utils
+5:22:21 PM: npm ERR!       enzyme-adapter-utils@^1.14.1 from enzyme-adapter-react-16@1.15.7
+5:22:21 PM: npm ERR!       node_modules/enzyme-adapter-react-16
+5:22:21 PM: npm ERR!         enzyme-adapter-react-16@^1.15.7 from the root project
+5:22:21 PM: npm ERR!   5 more (enzyme-adapter-react-16, enzyme-adapter-utils, ...)
+5:22:21 PM: npm ERR!
+5:22:21 PM: npm ERR! Could not resolve dependency:
+5:22:21 PM: npm ERR! peer react@^18.0.0 from @testing-library/react@13.4.0
+5:22:21 PM: npm ERR! node_modules/@testing-library/react
+5:22:21 PM: npm ERR!   @testing-library/react@^13.4.0 from the root project
+5:22:21 PM: npm ERR!
+5:22:21 PM: npm ERR! Conflicting peer dependency: react@18.2.0
+5:22:21 PM: npm ERR! node_modules/react
+5:22:21 PM: npm ERR!   peer react@^18.0.0 from @testing-library/react@13.4.0
+5:22:21 PM: npm ERR!   node_modules/@testing-library/react
+5:22:21 PM: npm ERR!     @testing-library/react@^13.4.0 from the root project
+5:22:21 PM: npm ERR!
+5:22:21 PM: npm ERR! Fix the upstream dependency conflict, or retry
+5:22:21 PM: npm ERR! this command with --force or --legacy-peer-deps
+5:22:21 PM: npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+5:22:21 PM: npm ERR!
+5:22:21 PM: npm ERR!
+5:22:21 PM: npm ERR! For a full report see:
+5:22:21 PM: npm ERR! /opt/buildhome/.npm/_logs/2023-06-20T16_22_20_932Z-eresolve-report.txt
+5:22:21 PM: npm ERR! A complete log of this run can be found in:
+5:22:21 PM: npm ERR!     /opt/buildhome/.npm/_logs/2023-06-20T16_22_20_932Z-debug-0.log
+5:22:21 PM: Error during npm install
+5:22:21 PM: Build was terminated: dependency_installation script returned non-zero exit code: 1
+5:22:22 PM: Failing build: Failed to install dependencies
+5:22:22 PM: Finished processing build request in 7.291s
