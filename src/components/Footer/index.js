@@ -6,6 +6,11 @@ import "./footer.css";
 // import InstagramIcon from '@mui/icons-material/Instagram';
 // import EmailIcon from '@mui/icons-material/Email';
 
+
+import { FaFacebook } from 'react-icons/fa';
+import {FaInstagram} from 'react-icons/fa';
+import {MdEmail} from 'react-icons/md'
+
 class Footer extends Component {
   render() {
       return (
@@ -17,19 +22,19 @@ class Footer extends Component {
       // 
 
       <div className="footer">
-		{/* <div className="socialMedia"> 
+		<div className="socialMedia"> 
 		<a target="_blank" href="https://www.facebook.com/">
-			<FacebookIcon />
+			<FaFacebook />
 			</a> 
 
 			<a target="_blank" href="https://www.instagram.com/">
-			<InstagramIcon />
+			<FaInstagram />
 			</a>
 
 			<a target="_blank" href="mailto: abc@example.com">
-			<EmailIcon />
+			<MdEmail />
 			</a>
-		</div> */}
+		</div>
 
 		<p> &copy; 2023 BeeBooks</p>
 	</div>

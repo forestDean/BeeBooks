@@ -81,11 +81,7 @@ small{
  } */
 
  /* IMAGE */
-<<<<<<< HEAD
 /* img{
-=======
- article >img {
->>>>>>> 9405fcd63df07dc44a2681e81fd264530c2b3a7f
   position: relative;
   float:left;
   width: 150px;
@@ -233,7 +229,7 @@ small{
  }
 
  /* IMAGE */
-img{
+ article >img{
   position: relative;
   float:left;
   width: 130px;
