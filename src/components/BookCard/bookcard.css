@@ -78,7 +78,7 @@ small{
  }
 
  /* IMAGE */
-img{
+ article >img {
   position: relative;
   float:left;
   width: 150px;

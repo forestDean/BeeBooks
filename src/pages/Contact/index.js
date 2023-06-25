@@ -1,13 +1,10 @@
-// import React from 'react';
 import React from "react";
 // import Form from 'react-bootstrap/Form';
 
 import "../Contact/contact.css"
 
-
 const Contact = () => {
   
-
   return (
     <div className="Contact">
 
