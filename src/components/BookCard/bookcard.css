@@ -1,6 +1,6 @@
 /* BOOKCARD styling */
 
-article {
+/* article {
   font-size: 18px;
   border:1px solid rgb(207, 206, 206);
   border-radius: 15px;
@@ -19,4 +19,161 @@ article >img {
   margin-bottom: 30px;;
   box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
   filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
+} */
+
+:root{
+	--blue: #A8D1D1;
+	--lightblue: #DFebeb;
+	--green: #DAE5D0;
+	--beige: #F9EBC8;
+  --lighbeige: #f5f2eb;
+	--blue3: #A0BCC2;
+  --textdark: #5a8291;
+
+}
+
+#bookInfo{
+  width: 100%;
+}
+
+article{
+  box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
+  filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
+	background: #f5f2eb;
+	border-radius: 15px;
+  border:1px solid rgb(207, 206, 206);
+	overflow: hidden;
+	margin: 5em auto;
+ 	
+	
+}
+
+/* TEXT */
+
+.fst-italic{
+  font-family: 'EB Garamond', serif;
+	text-align: left;
+	font-size: 15px;
+  margin-left: -40%; 
+  color: #394e57;
+}
+
+small{
+  margin-left: -40%;
+  font-style: italic;
+  font-size: 13px;
+  color: black;
+}
+
+.bookCard h3{
+  color: #99DBF5;
+  margin-top: 30px;
+
+ }
+
+ .author{
+  color: #5a8291;
+  margin-bottom: 30px;
+  
+ }
+
+ /* IMAGE */
+img{
+  position: relative;
+  float:left;
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
+  filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
+ }
+
+ 
+
+ /* BUTTON */
+ .btn.outline.my-4{
+  width: 95%;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+
+}
+
+.btn.outline.my-4 {
+  background: rgba(0, 212, 255, 0.9);
+  color: white;
+  font-style: bold;
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all .3s ease;
+  
+}
+
+.btn.outline.my-4:hover{
+  transform: scale(1.1);
+  background: var(--green);
+  border-color: var(--green);
+  transition: all .3s ease;  
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 576px) { 
+  #bookInfo{
+    width: 115%;
+  }
+ img{
+  width: 90px;
+ }
+ .fst-italic{
+	font-size: 12px;
+  margin-left: -40%; 
+}
+
+#isbn{
+  font-size: 11px;
+  margin-left: -20%;
+
+}
+.bookCard h3{
+font-size: 20px;
+}
+button.btn{
+  width: 85%;
+
+}
+}
+
+@media (max-width: 768px) { 
+  #bookInfo{
+    width: 115%;
+  }
+  .fst-italic{
+    font-size: 13px;
+    margin-left: -40%; 
+  }
+
+  img{
+    width: 100px;
+   }
+
+   #isbn{
+    font-size: 11px;
+    margin-left: -20%;
+  
+  }
+}
+
+@media (max-width: 992px) {
+  #bookInfo{
+    width: 117%;
+  }
+  #isbn{
+    margin-left: -30%;
+  
+  }
 }
