@@ -2,12 +2,6 @@ import "./bookcard.css";
 
 const BookCard = (props) => {
 
-    const goShop = () => {
-    console.log('props @Google',  props.isbn)
-    const url = `https://www.google.com/search?q=${encodeURIComponent(props.isbn)}`;
-    window.location= url;
-    };
-
     return (
 
         <div id="bookInfo">
@@ -17,10 +11,10 @@ const BookCard = (props) => {
                 {props.image}
                 <p id="description" className="fst-italic">{props.description}</p>
                 <small id="isbn">ISBN: {props.isbn}</small>
-                <button type="button" onClick={goShop} className="btn w-100 btn-outline-primary my-4">SHOP</button>
+                <button type="button" className="btn w-100 btn-outline-primary my-4">SHOP</button>
             </article>
         </div> 
-
+        // https://www.google.com/search?q=
     );
 
 }
