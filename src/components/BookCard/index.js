@@ -11,7 +11,7 @@ const BookCard = (props) => {
                 {props.image}
                 <p id="description" className="fst-italic">{props.description}</p>
                 <small id="isbn">ISBN: {props.isbn}</small>
-                <button type="button" className="btn w-100 btn-outline-primary my-4">SHOP</button>
+                <button type="button" className="btn outline my-4">SHOP</button>
             </article>
         </div> 
         // https://www.google.com/search?q=
