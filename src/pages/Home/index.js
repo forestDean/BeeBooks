@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./home.module.css";
-// import logo from '../../assets/images/bee-logo.png';
 import Row from "../../components/Row";
 import Column from "../../components/Column";
 import BookApi from "../../components/BookApi";
 import Search from "../../components/Search";
 
 
-// import image from '../../assets/images/image1.jpg';
-
-
 const Home = () => {
+  const [searchQuery, setSearchQuery] = useState("foxes");
+
+  const handleSearch = (searchQuery) => {
+    setSearchQuery(searchQuery);
+    // console.log('Search query @Home:', searchQuery);
+  };
+
     return (  
       <div className=""> 
         <h3> Find The Right Book For You </h3>
          <Row className="row"> 
             <Column size="md-12">
-              <Search />
+              <Search onSearch={handleSearch} />
             </Column>
           </Row>
       
@@ -25,9 +28,8 @@ const Home = () => {
             <Column size="md-12">
             <div className="App">
               <header className="App-header">
-                {/* <img src={logo} className="App-logo" alt="logo" /> */}
               </header>
-              <BookApi />
+              <BookApi searchQuery={searchQuery}/>
             </div>
             </Column>
 
