@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-// import Form from 'react-bootstrap/Form';
 import emailjs from '@emailjs/browser';
 // import emailjs from '@emailjs/nodejs';
 import "./contact.css"
@@ -7,62 +6,82 @@ import "./contact.css"
 const Contact = () => {
 
   const form = useRef();
-  // let pageAlert = "Here..."
+
   const [contactData, setContactData] = useState({
     name: "",
     email: "",
     message: ""
   });
 
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    message: ""
+  });
+
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitFail, setSubmitFail] = useState(false);
+  
   const handleInputChange = event => {
     setContactData({ ...contactData, [event.target.name]: event.target.value });
   };
 
   const handleFormSubmit = event => {
 
-    // Preventing the default behavior of the form submit (which is to refresh the page)
+    // Prevent the default behavior of the form submit
     event.preventDefault();
-    // console.table(contactData);
-    // console.table(form);
 
-    if (!contactData.name) {
-      alert("Fill out your name please!");
-      // pageAlert = "Fill out your first and last name please!";
-    } else if (!contactData.email){
+    //  **************** Validate ****************
+      const { name, email , message } = contactData;
+      const errors = {};
 
-      // pageAlert = "Fill out your email please!";
-            alert("Fill out your email please!");
-    //   return
-    // } else {
-    //   alert(`Hello ${contactData.firstName} ${contactData.lastName}`);
-    //   // pageAlert = `Hello ${contactData.firstName} ${contactData.lastName}`;
-    } else if (!contactData.message){
-      alert("Fill out your message please!");
-
+      if (name.trim() === '') {
+        errors.name = '*name is required';
       }
 
+      if (email.trim() === '') {
+        errors.email = '*email is required';
+      } else if (!isValidEmail(email)) {
+        errors.email = '*invalid email address';
+      }
+
+      if (message.trim() === '') {
+        errors.message = '*message is required';
+      }
+
+      // If errors, update State and STOP
+      if (Object.keys(errors).length > 0) {
+        setErrors(errors);
+        return;
+      }
+
+    //  **************** emailJS ****************
     emailjs.sendForm('service_zqpe0ek', 'template_ngtguyy', form.current, 'If_LqfkakOR_Q0PRF')
     .then((result) => {
-        // show the user a success message
-        // console.table(result);
         console.log(result.text);
-        alert("Message sent!");
-        // pageAlert = "Message sent!";
+      // Clear errors & display submit success
+      setErrors({});
+      setSubmitSuccess(true);
     }, (error) => {
         // show the user an error
-        alert("Message failed!", error);
-        // pageAlert = "Message failed!";
+        console.log(error);
+        setSubmitFail(true);
+        return;
     });
 
   }
 
-  
+    const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   return (
     <div className="Contact">
 
 <div className="containerForm">
       <h2 className="titleC">Contact Us</h2>
-      <form ref={form}>
+      <form id="contactForm" onSubmit={handleFormSubmit} ref={form} novalidate>
         <div className="mb-3">
           <label className="form-label" htmlFor="name">
             Name
@@ -74,8 +93,8 @@ const Contact = () => {
           value={contactData.name} 
           type="text" 
           id="name" 
-          required 
           />
+          {errors.name && <span>{errors.name}</span>}
         </div>
 
         <div className="mb-3">
@@ -87,10 +106,10 @@ const Contact = () => {
           name="email"
           onChange={handleInputChange}
           value={contactData.email} 
-          type="email" 
+          type="message"
           id="email" 
-          required 
           />
+          {errors.email && <span>{errors.email}</span>}
         </div>
 
         <div className="mb-3">
@@ -105,11 +124,13 @@ const Contact = () => {
           value={contactData.message}
           type="text"
           id="message" 
-          required 
           />
+          {errors.message && <span>{errors.message}</span>}
         </div>
       
-        <input type="submit" value="Send" className="button" onClick={handleFormSubmit}/>
+        <input type="submit" value="Send" className="button"/>
+        {submitSuccess && <div id="success">Message sent!</div>}
+        {submitFail && <div id="fail">Message not sent!</div>}
 
       </form>
     </div>
