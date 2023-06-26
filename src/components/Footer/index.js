@@ -19,15 +19,15 @@ class Footer extends Component {
 
       <div className="footer">
 		<div className="socialMedia"> 
-		<a target="_blank" href="https://www.facebook.com/">
+		<a  href="https://www.facebook.com/">
 			<FaFacebook />
 			</a> 
 
-			<a target="_blank" href="https://www.instagram.com/">
+			<a  href="https://www.instagram.com/">
 			<FaInstagram />
 			</a>
 
-			<a target="_blank" href="mailto: abc@example.com">
+			<a  href="mailto: abc@example.com">
 			<MdEmail />
 			</a>
 		</div>

@@ -4,11 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-<<<<<<< HEAD
     "@react-icons/all-files": "^4.1.0",
-=======
-    "@emailjs/nodejs": "^2.2.0",
->>>>>>> main
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
