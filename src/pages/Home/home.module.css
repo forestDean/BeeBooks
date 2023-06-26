@@ -15,7 +15,6 @@
 } */
 
 
-
 :root{
 	--blue: #A8D1D1;
 	--lightblue: #DFebeb;
@@ -37,7 +36,7 @@
   font-family: 'AlikeAngular';
   color: var(--textdark2);
   margin-bottom: 30px;
-   
-  }
+
+}
 
   

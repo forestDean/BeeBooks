@@ -1,5 +1,5 @@
 import "./bookcard.css";
-import Column from "./../Column";
+// import Column from "./../Column";
 
 
 const BookCard = (props) => {
@@ -12,18 +12,16 @@ const BookCard = (props) => {
 
     return (
 
-
         <div id="bookInfo">
-            <article className="bookCard mb-5 w-50 " id={props.id}>
-
-                <h3>{props.title}</h3>
-                <p>by {props.author}</p>
-                {props.image}
-                <p id="description" className="fst-italic">{props.description}</p>
-                <small id="isbn">ISBN: {props.isbn}</small>
-                <button type="button" onClick={goShop} className="btn outline my-4 mx-auto fixed-bottom">SHOP</button>
-            </article>
-        </Column> 
+        <article className="bookCard mb-5 w-50 " id={props.id}>
+            <h3>{props.title}</h3>
+            <p>by {props.author}</p>
+            {props.image}
+            <p id="description" className="fst-italic">{props.description}</p>
+            <small id="isbn">ISBN: {props.isbn}</small>
+            <button type="button" onClick={goShop} className="btn outline my-4">SHOP</button>
+        </article>
+    </div> 
 
     );
 
