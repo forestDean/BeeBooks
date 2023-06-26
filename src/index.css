@@ -5,6 +5,11 @@
   src: url('./assets/fonts/Lato/Lato-Regular.ttf'); 
 } 
 
+@font-face { 
+  font-family: AlikeAngular-Regular; 
+  src: url('./assets/fonts/AlikeAngular-Regular.ttf'); 
+} 
+
 * {
    box-sizing: border-box;  /* Bootstrap default */
   }
