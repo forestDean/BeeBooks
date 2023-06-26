@@ -37,7 +37,6 @@ return (
         <div className='links'>
 	          <Link to="/">Home</Link>
 	            <Link to="about">About</Link>
-	              <Link to="text">Text</Link>
 	           <Link to="contact">Contact</Link>
 	              </div>
 
