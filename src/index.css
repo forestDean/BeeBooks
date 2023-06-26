@@ -11,9 +11,13 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color:rgba(255, 255, 0, 0.1) !important;
+  /* background-color:rgba(255, 255, 0, 0.1) !important; */
+  background-image: url('./assets/images/beeBackground.png');
+  background-repeat: repeat;
   overflow: scroll; /* Show scrollbars */
 }
+
+body >img {opacity: 0.75;}
 
 /* .container-fluid {
   margin-top: 20px;
