@@ -22,9 +22,9 @@ const App = () => {
               <Route path="/contact" element={<Contact/>} />
               {/* <Route path="/13-react-portfolio/" element={<Home/>} /> */}
             </Routes>
-          </Wrapper>
-          <Footer />
+          </Wrapper>         
         </Container>
+        <Footer />
       </Router>
     );
   }
