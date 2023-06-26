@@ -13,9 +13,9 @@ body {
   font-family: 'Lato', sans-serif;
   background-color:rgba(255, 255, 0, 0.1) !important;
   overflow: scroll; /* Show scrollbars */
-  
-    /* background-image: url("./assets/images/favicon-1.png");
-    background-repeat: repeat-x; */
+/*   
+    background-image: url("./assets/images/2.png");
+    background-repeat: repeat; */
   
 }
 
