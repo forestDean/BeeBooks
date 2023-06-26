@@ -10,7 +10,7 @@ const BookCard = (props) => {
 
     return (
 
-        <div id="bookInfo">
+        <div id="bookInfo col-6">
             <article className="bookCard mb-5 w-50 mx-auto" id={props.id}>
                 <h3>{props.title}</h3>
                 <p>by {props.author}</p>
