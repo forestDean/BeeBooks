@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "./footer.css";
 // import Row from "../../components/Row";
 
-// import FacebookIcon from '@mui/icons-material/Facebook';
-// import InstagramIcon from '@mui/icons-material/Instagram';
-// import EmailIcon from '@mui/icons-material/Email';
-
 
 import { FaFacebook } from 'react-icons/fa';
 import {FaInstagram} from 'react-icons/fa';

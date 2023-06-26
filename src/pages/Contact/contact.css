@@ -1,14 +1,14 @@
-:root{
+/* CONTACT FORM styling */
+
+:root {
 	--blue: #A8D1D1;
 	--lightblue: #DFebeb;
 	--green: #DAE5D0;
 	--beige: #F9EBC8;
 	--blue3: #A0BCC2;
-
 }
 
-
-.containerForm{
+.containerForm {
 	width: 500px;
 	padding: 30px;
 	background: var(--blue);
@@ -19,38 +19,53 @@
 	border-radius: 10%;
 }
 
-
-.form-control{
+.form-control {
 	background-color:  var(--lightblue);
 }
-.button{
-	
-		margin-top: 20px;
-		width: 100%;
-		  border: none;
-		  padding: 12px 24px;
-		  border-radius: 24px;
-		  font-size: 12px;
-		  font-size: 0.8rem;  
-		  letter-spacing: 2px;  
-		  cursor: pointer;
-		  background-color: rgba(0, 212, 255, 0.9);
-		
-		}
 
+.button {
+	margin-top: 20px;
+	width: 100%;
+	border: none;
+	padding: 12px 24px;
+	border-radius: 24px;
+	font-size: 12px;
+	font-size: 0.8rem;  
+	letter-spacing: 2px;  
+	cursor: pointer;
+	background-color: rgba(0, 212, 255, 0.9);
 
+}
 
-.titleC{
+.titleC {
 	font-size: 24px;
 	font-family: sans-serif;
 	color: white;
 	margin-bottom: 15px;
 }
 
+/* ****************** VALIDATION ****************** */
+
+span {
+	color: red;
+  }
+
+#success {
+	color: white;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+#fail {
+	color: red;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+/* ****************** MEDIA QUERIES ****************** */
 
 @media only screen and (max-width: 600px) {
 	.containerForm{
 		width: 350px;
 	}
-  
-  }
+}
