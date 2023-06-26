@@ -11,7 +11,7 @@ const BookCard = (props) => {
     return (
 
         <div id="bookInfo">
-            <article className="bookCard mb-5 w-50 mx-auto" id={props.id}>
+            <article className="bookCard mb-5 w-50 " id={props.id}>
                 <h3>{props.title}</h3>
                 <p>by {props.author}</p>
                 {props.image}
@@ -26,3 +26,5 @@ const BookCard = (props) => {
 }
 
 export default BookCard;
+
+{/* <article className="bookCard mb-5 w-50 mx-auto" id={props.id}></article> */}

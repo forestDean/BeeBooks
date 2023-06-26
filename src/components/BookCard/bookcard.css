@@ -184,11 +184,12 @@ button.btn{
 
 /* IF THE GRID IS APPLIED */
 #bookInfo{
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(2, 760px);
   grid-auto-flow: row;
- padding-right: 100%;
-}  
+ margin-left: 5%;
+
+ }  
 
 article{ 
   box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
@@ -255,18 +256,18 @@ small{
 }
 
 .btn.outline.my-4 {
-  background: rgba(0, 212, 255, 0.9);
+  background: var(--blue);
   color: white;
   font-style: bold;
-  border: 1px solid rgba(0, 212, 255, 0.6);
+  border: 1px solid var(--blue);
   transition: all .3s ease;
   
 }
 
 .btn.outline.my-4:hover{
   transform: scale(1.1);
-  background: var(--green);
-  border-color: var(--green);
+  background: #d5ebeb;
+  border-color: #d5ebeb;
   transition: all .3s ease;  
 }
 
@@ -279,7 +280,7 @@ small{
    grid-template-columns: repeat(1, 750px);
    grid-auto-flow: row;
  }
- img{
+ article >img{
   width: 90px;
  }
  .fst-italic{
@@ -312,7 +313,7 @@ button.btn{
     margin-left: -40%; 
   }
 
-  img{
+  article >img{
     width: 100px;
    }
 
@@ -333,4 +334,13 @@ button.btn{
     margin-left: -20%;
   
   }
+}
+
+
+@media (max-width: 1200px) {
+  #bookInfo{
+    display: grid;
+    grid-template-columns: repeat(1, 750px); 
+  }
+  
 }

@@ -15,7 +15,7 @@ const Home = () => {
   };
 
     return (  
-      <div className=""> 
+      <div className="home"> 
         <h3> Find The Right Book For You </h3>
          <Row className="row"> 
             <Column size="md-12">
