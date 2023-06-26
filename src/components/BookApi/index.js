@@ -3,7 +3,7 @@ import "./bookapi.css";
 import axios from 'axios';
 import BookCard from './../BookCard'
 import Row from "./../Row";
-import Column from "../../components/Column";
+
 
 const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=children+subject:";
 // const APIKEY = "&key=AIzaSyAsBgCpq65SZuym7PV66Qi1qfp_5xIdA0w";
@@ -31,8 +31,8 @@ const BookApi = ({searchQuery}) => {
   }, [searchQuery]);
 
   return (
-    <div className="mx-auto mt-5" id="bookResults">
-      <h2 className="mb-4">Book Search Results:</h2>
+    <div className="container mx-auto mt-5" id="bookResults">
+      {/* <h2 className="mb-4">Book Search Results:</h2> */}
             
       <Row id="bookInfo">
         {books.map((book) => (

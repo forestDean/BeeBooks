@@ -183,12 +183,12 @@ button.btn{
 
 
 /* IF THE GRID IS APPLIED */
-#bookInfo{
+/* #bookInfo{
    display: grid;
   grid-template-columns: repeat(2, 760px);
   grid-auto-flow: row;
  padding-right: 100%;
-}  
+}   */
 
 article{ 
   box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
