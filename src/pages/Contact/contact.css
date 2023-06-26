@@ -12,11 +12,10 @@
 	width: 500px;
 	padding: 30px;
 	background: var(--blue);
-	margin: 50px auto;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+	margin: 30px auto 60px;
 	border-radius: 10%;
+	box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
+	filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
 }
 
 .form-control {

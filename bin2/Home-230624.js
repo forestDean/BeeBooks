@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./home.module.css";
+// import logo from '../../assets/images/bee-logo.png';
 import Row from "../../components/Row";
 import Column from "../../components/Column";
 import BookApi from "../../components/BookApi";
@@ -7,29 +8,34 @@ import Search from "../../components/Search";
 
 
 const Home = () => {
-  const [searchQuery, setSearchQuery] = useState("foxes");
-
   const handleSearch = (searchQuery) => {
-    setSearchQuery(searchQuery);
-    // console.log('Search query @Home:', searchQuery);
+    console.log(searchQuery);
+    BookApi.getData(searchQuery);
   };
 
-    return (  
+  // const [searchQuery, setSearchQuery] = useState("");
 
-      <div className="home"> 
+    return (  
+      <div className=""> 
         <h3> Find The Right Book For You </h3>
          <Row className="row"> 
-
             <Column size="md-12">
               <Search onSearch={handleSearch} />
+              {/* <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} /> */}
             </Column>
           </Row>
-        </header>
       
-          <Row className="row">                 
+          <Row className="row">   
+               
             <Column size="md-12">
-              <BookApi searchQuery={searchQuery}/>
+            <div className="App">
+              <header className="App-header">
+                {/* <img src={logo} className="App-logo" alt="logo" /> */}
+              </header>
+              <BookApi />
+            </div>
             </Column>
+
           </Row>
 
       </div>

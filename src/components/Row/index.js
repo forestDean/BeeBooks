@@ -1,7 +1,7 @@
 import React from "react";
 
-function Row(props,{className}) {
-
+function Row(props) {
+  const { className } = props;
   return <div className={`row ${className}`}>{props.children}</div>;
 
 }

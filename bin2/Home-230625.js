@@ -15,21 +15,24 @@ const Home = () => {
   };
 
     return (  
-
-      <div className="home"> 
+      <div className=""> 
         <h3> Find The Right Book For You </h3>
          <Row className="row"> 
-
             <Column size="md-12">
               <Search onSearch={handleSearch} />
             </Column>
           </Row>
-        </header>
       
-          <Row className="row">                 
+          <Row className="row">   
+               
             <Column size="md-12">
+            <div className="App">
+              <header className="App-header">
+              </header>
               <BookApi searchQuery={searchQuery}/>
+            </div>
             </Column>
+
           </Row>
 
       </div>

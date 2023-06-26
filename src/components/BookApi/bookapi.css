@@ -1,5 +1,6 @@
 /* BOOKAPI style */
 
+
 :root{
 	--blue: #A8D1D1;
 	--lightblue: #DFebeb;
@@ -20,4 +21,8 @@ h2.mb-4{
     font-family: 'AlikeAngular';
     color: var(--textdark2);
     margin-bottom: 50px;
+
+#bookResults {
+    background-color: rgba(255, 255, 255, 0);
+
 }
