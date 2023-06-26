@@ -193,7 +193,7 @@ button.btn{
 article{ 
   box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
   filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
-	background: #f5f2eb;
+	background-color: #f5f2eb;
 	border-radius: 15px;
   border:1px solid rgb(207, 206, 206);
 	overflow: hidden;
