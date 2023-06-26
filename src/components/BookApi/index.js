@@ -29,7 +29,7 @@ const BookApi = ({searchQuery}) => {
   }, [searchQuery]);
 
   return (
-    <div className="mx-auto" id="bookResults">
+    <div className="mx-auto mt-5" id="bookResults">
       <h2 className="mb-4">Book Search Results:</h2>
             
       <div id="bookInfo">
