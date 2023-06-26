@@ -9,10 +9,15 @@
 
 }
 
+header {
+  /* border: 1px dashed red; */
+  margin: 0 -12px !important;
+}
+
 .navbar {
   font-family: 'AlikeAngular', serif;
   background-color: var(--blue);
-  /* border: 1px dashed red; */ 
+  border: 3px solid white; 
   margin: 0 -12px;
 }
 
