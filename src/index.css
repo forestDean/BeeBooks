@@ -20,6 +20,10 @@ body {
   background-image: url('./assets/images/beeBackground.png');
   background-repeat: repeat;
   overflow: scroll; /* Show scrollbars */
+/*   
+    background-image: url("./assets/images/2.png");
+    background-repeat: repeat; */
+  
 }
 
 body >img {opacity: 0.75;}
