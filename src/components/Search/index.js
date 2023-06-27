@@ -19,7 +19,7 @@ const Search = ({ onSearch }) => {
         <Form.Control
           type="text"
           name="search"
-          placeholder="Please enter your search topic..."
+          placeholder="Enter a magic word..."
           className="me-2"
           aria-label="Search"
           value={searchQuery}

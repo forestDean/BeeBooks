@@ -1,17 +1,5 @@
 /* FOOTER style */
 
-/*.footer {
-  min-height: 55px;
-  margin-top: 40px; */
-  /* background: darkolivegreen;
-   border: 1px solid darkolivegreen;
-  border-top: 0;
-  border-left: 0;
-  color: darkolivegreen;
-  box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
-  filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));  */
- 
-
   :root{
     --blue: #A8D1D1;
     --lightblue: #DFebeb;
@@ -27,13 +15,8 @@
   .footer{
     background: var(--blue);
     margin: 0 -12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding-top: 10px;
     border: 3px solid white; 
-  
   }
   
   .socialMedia svg {
@@ -51,4 +34,11 @@
   
   .footer p {
     color: var(--lightblue);
+  }
+
+  .btt {
+    border: 1px dashed white !important;
+    height:90px;
+    width:50px;
+    /* visibility: hidden; */
   }

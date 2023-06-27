@@ -17,22 +17,29 @@ class Footer extends Component {
       //   </footer>
       // 
 
-      <div className="footer">
-		<div className="socialMedia"> 
-		<a  href="https://www.facebook.com/">
-			<FaFacebook />
-			</a> 
+      <div className="footer d-flex justify-content-between align-items-center" role="button">
+	  <div className="btn btt w-25 " role="button"><a href="#header">#</a> </div>
 
-			<a  href="https://www.instagram.com/">
-			<FaInstagram />
-			</a>
+		<div className="midFooter text-center w-50">
+			<div className="socialMedia"> 
+			<a  href="https://www.facebook.com/">
+				<FaFacebook />
+				</a> 
 
-			<a  href="mailto: abc@example.com">
-			<MdEmail />
-			</a>
+				<a  href="https://www.instagram.com/">
+				<FaInstagram />
+				</a>
+
+				<a  href="mailto: abc@example.com">
+				<MdEmail />
+				</a>
+			</div>
+
+			<p> &copy; 2023 BeeBooks</p>
 		</div>
 
-		<p> &copy; 2023 BeeBooks</p>
+
+		<div className="btn btt w-25 btn btn-lg btn-block" role="button"><a href="#header">#</a> </div>
 	</div>
 	
       );
