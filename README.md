@@ -1,6 +1,3 @@
-![licence badge](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
-![react badge](https://img.shields.io/badge/React-v.16.14.0-purple.svg?style=flat-square)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/13223660-449f-4633-a5d7-7d6c6adfc483/deploy-status)](https://app.netlify.com/sites/bucolic-alpaca-df751e/deploys) 
 
 # BeeBooks
  ## Table Of Contents
@@ -24,7 +21,7 @@ Overall, BeeBooks endeavors to create an immersive and educational digital platf
 
 ## Installation
  
-- Link to deployed website:  
+- Link to deployed website:  https://beebooks.netlify.app/ 
 --- 
 
 - Clone the GitHub repository to your computer.
@@ -89,4 +86,6 @@ Overall, BeeBooks endeavors to create an immersive and educational digital platf
 
 
 ## License
-MIT License - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+![licence badge](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
+![react badge](https://img.shields.io/badge/React-v.16.14.0-purple.svg?style=flat-square)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/13223660-449f-4633-a5d7-7d6c6adfc483/deploy-status)](https://app.netlify.com/sites/bucolic-alpaca-df751e/deploys) 
