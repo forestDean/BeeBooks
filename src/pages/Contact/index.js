@@ -58,7 +58,7 @@ const Contact = () => {
     //  **************** emailJS ****************
     emailjs.sendForm('service_zqpe0ek', 'template_ngtguyy', form.current, 'If_LqfkakOR_Q0PRF')
     .then((result) => {
-        console.log(result.text);
+      console.log('Response Code: ', result.status, result.text);
       // Clear errors & display submit success
       setErrors({});
       setSubmitSuccess(true);
@@ -81,7 +81,7 @@ const Contact = () => {
 
 <div className="containerForm">
       <h2 className="titleC">Contact Us</h2>
-      <form id="contactForm" onSubmit={handleFormSubmit} ref={form} novalidate>
+      <form id="contactForm" onSubmit={handleFormSubmit} ref={form}>
         <div className="mb-3">
           <label className="form-label" htmlFor="name">
             Name
@@ -129,9 +129,10 @@ const Contact = () => {
         </div>
       
         <input type="submit" value="Send" className="button"/>
-        {submitSuccess && <div id="success">Message sent!</div>}
-        {submitFail && <div id="fail">Message not sent!</div>}
-
+        <div id="alert">     
+          {submitSuccess && <span id="success">Message sent!</span>}
+          {submitFail && <span id="fail">Message not sent!</span>}
+        </div>
       </form>
     </div>
 </div>
