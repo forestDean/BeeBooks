@@ -16,7 +16,7 @@ header {
   font-family: 'AlikeAngular', serif;
   background-color: var(--blue);
   border: 3px solid white; 
-  margin: 0 -12px;
+  margin: 0 0px;
 }
 
 .navbar-brand {
