@@ -1,10 +1,14 @@
 /* ABOUT US style */
 :root{
-	--blue: #A8D1D1;
+  --blue: #A8D1D1;
 	--lightblue: #DFebeb;
 	--green: #DAE5D0;
 	--beige: #F9EBC8;
+  --lighbeige: #f5f2eb;
 	--blue3: #A0BCC2;
+  --textdark: #5a8291;
+  --yellow: #f6ec85;
+  --darkfont: #333;
 
 }
 
@@ -13,8 +17,9 @@
     border-radius: 10%;
 }
 
-#panel {
-  font-size: 20px;
+ .p-5 {
+  font-size: 16px;
+  color: var(--darkfont);
 }
 
 .storyTitle{
@@ -23,6 +28,7 @@
     margin-bottom: 30px;
     font-family: sans-serif;
     color: var(--blue);
+    font-family: 'Lato';
 }
 
 .info{
@@ -36,7 +42,7 @@
 
 .valueT{
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: 'Lato';
   color: var(--blue);
 
 }
@@ -75,7 +81,7 @@
     top: 20px;
     width: 200px;
     height: 220px;
-    background: #333;
+    background: var(--darkfont);
     border-radius: 12px;
     overflow: hidden;
     transition: 0.5s;
@@ -113,13 +119,15 @@
   }
   
   .card .content h2 {
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-family: 'Lato';
     font-weight: 700;
-    color: var(--clr);
+    color: var(--textdark);
   }
   
   .card .content p {
-    color: #333;
+    color: var(--darkfont);
+    font-size: 16px;
   }
   
  .card .content a {
