@@ -25,7 +25,7 @@ return (
             <h3 className="storyTitle">Our Story</h3>
 
             <p>
-Once upon a time, in a land filled with vibrant colors and boundless imagination, 
+Once upon a time, in a land filled with vibrant colours and boundless imagination, 
 there was a remarkable company known as BeeBooks. This enchanting company was born out of a deep love for 
 storytelling and a desire to ignite the spark of imagination in every child's heart.</p>
 

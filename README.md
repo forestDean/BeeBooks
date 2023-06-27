@@ -38,7 +38,7 @@ Overall, BeeBooks endeavors to create an immersive and educational digital platf
 - As a user, I want to see a search bar prominently displayed on the homepage, so I can easily start looking for books.
 - As a user, I want each book displayed with an eye-catching cover image, title, author, and a brief description.
 - As a user, I want the website to be user-friendly, with simple navigation and clear instructions.
-- As a user, I want to be greeted with a friendly and colorful homepage.
+- As a user, I want to be greeted with a friendly and colourful homepage.
 
 
 ---
