@@ -50,9 +50,10 @@ return (
       </div>
 
 
-      <h3 className="valueT"> Our Values</h3>
+      <h3 className="valueT px-5 ">Our Values</h3>
       <Row className="card-containers">
-        <Column size="lg-4">    
+        <Column size="lg-4">   
+
           {/* CARD1 */}
           <div className="card" >
             <div className="img-box">
