@@ -49,16 +49,21 @@ span {
 	color: red;
   }
 
-#success {
-	color: white;
+#alert {
+	height:30px;
+}
+
+#success, #fail {
 	margin-top: 10px;
 	padding-left: 20px;
 }
 
+#success {
+	color: white;
+}
+
 #fail {
 	color: red;
-	margin-top: 10px;
-	padding-left: 20px;
 }
 
 /* ****************** MEDIA QUERIES ****************** */

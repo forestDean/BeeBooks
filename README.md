@@ -1,4 +1,8 @@
 
+![licence badge](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
+![react badge](https://img.shields.io/badge/React-v.16.14.0-purple.svg?style=flat-square)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/13223660-449f-4633-a5d7-7d6c6adfc483/deploy-status)](https://app.netlify.com/sites/bucolic-alpaca-df751e/deploys) 
+
 # BeeBooks
  ## Table Of Contents
   - [Description](#description)
@@ -86,6 +90,4 @@ Overall, BeeBooks endeavors to create an immersive and educational digital platf
 
 
 ## License
-![licence badge](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
-![react badge](https://img.shields.io/badge/React-v.16.14.0-purple.svg?style=flat-square)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/13223660-449f-4633-a5d7-7d6c6adfc483/deploy-status)](https://app.netlify.com/sites/bucolic-alpaca-df751e/deploys) 
+MIT License - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
