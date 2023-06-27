@@ -16,7 +16,7 @@ const BookCard = (props) => {
     <Column size="lg-6" id="bookInfo">
         <article className="bookCard text-center mb-5" id={props.id}>
             <h3>{props.title}</h3>
-            <p>by {props.author}</p>
+            <p className="author">by {props.author}</p>
             {props.image}
             <p id="description" className="fst-italic">{props.description}</p>
             <small className="fixed-bottom" id="isbn">ISBN: {props.isbn}</small>
