@@ -8,10 +8,13 @@
 
 }
 
-
 .book {
     width: 110%;
     border-radius: 10%;
+}
+
+#panel {
+  font-size: 20px;
 }
 
 .storyTitle{
@@ -58,10 +61,11 @@
   
   .card {
     margin: 0 auto !important;
-    margin-bottom: 30px !important;
-    width: 80%;
+    margin-bottom: 50px !important;
+    width: 70%;
     font-size: 20px;
   }
+
   .card:hover {
     height: 350px;
   }
@@ -134,31 +138,34 @@
   }
   
 
+  /* ================= RESPONSIVE MEDIA QUERIES - MOBILE FIRST ================= */
 
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
 
-  @media (max-width: 480px) {
-    .card-containers .card {
-        width: 230px;
-        border-radius: 15px;
-        margin-top: 30%;
-    }
-  
-    .card-containers .card .img-box {
-        width: 185px;
-        border-radius: 10px;
-    }
-  
-    .ccard-containers .card .content p {
-        font-size: 0.8rem;
-    }
-  
-    .card-containers .card .content a {
-        font-size: 0.9rem;
-    }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
 
-    .book {
-      width: 60%;
-      border-radius: 10%;
-  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card {
+    width: 1000%;
+    font-size: 18px;
 
   }
+  #panel {
+    font-size:18px;
+  }
+} 
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}

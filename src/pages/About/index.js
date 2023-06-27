@@ -16,7 +16,7 @@ return (
       <div className='background'>
         
     <Container className='info'> 
-    <div className="row align-items-center" id="pannel">
+    <div className="row align-items-center" id="panel">
         <div className="col-lg-5 order-lg-2">
           <div className="p-5">
             <img className='book' src={beebook} alt="book cover"/>
