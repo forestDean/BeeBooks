@@ -4,10 +4,10 @@ import "./container.css";
 
 
 function Container(props) {
-
+  const { className } = props;
 
   return (
-    <div className="container">{props.children}</div>
+    <div className={`container ${className}`}>{props.children}</div>
   );
 
 }

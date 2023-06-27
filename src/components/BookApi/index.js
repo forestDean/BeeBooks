@@ -32,10 +32,10 @@ const BookApi = ({searchQuery}) => {
   }, [searchQuery]);
 
   return (
-    <Container className="container mx-auto mt-5" id="bookResults">
+    <setion className="mx-auto mt-5" id="bookResults">
       <h2 className="mb-4">Book Search Results:</h2>
             
-      <Row id="bookInfo">
+      <Row className="bookInfo">
         {books.map((book) => (
           <BookCard 
           key={book.id}
@@ -48,7 +48,7 @@ const BookApi = ({searchQuery}) => {
        ))}
       </Row>
       
- </Container>
+ </setion>
 
   );
 
