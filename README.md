@@ -85,6 +85,7 @@ Overall, BeeBooks endeavors to create an immersive and educational digital platf
 ## Credits
 - John Walton
 - Lubomila Lozanova
+- 
 
 
 ---
