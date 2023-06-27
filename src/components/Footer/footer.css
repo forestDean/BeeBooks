@@ -25,7 +25,6 @@
   }
 
   .footer{
-    width: 100%;
     background: var(--blue);
     margin: 0 -12px;
     display: flex;
