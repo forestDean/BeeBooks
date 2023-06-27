@@ -40,10 +40,16 @@ input.me-2.form-control{
   border: 1px solid var(--blue);
 }
 
-/* button.btn.btn-outline-success {
+button.btn.btn-outline-success {
   border: 1px solid var(--blue); 
   border-radius: 25px !important;
-  color: var(--lightblue);
-  margin-bottom: 20px;
-  
-} */
+  color: white;
+  font-style: bold;
+  background-color: var(--blue);
+}
+
+button.btn.btn-outline-success:hover{
+  background-color: #f5f2eb;
+  color: var(--textdark);
+  border: 1px solid var(--textdark);
+}
