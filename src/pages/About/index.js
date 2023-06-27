@@ -31,25 +31,18 @@ storytelling and a desire to ignite the spark of imagination in every child's he
 
 <p> As the days and years went by, BeeBooks grew and flourished. 
   It became a beloved destination for children and parents alike, a digital 
-  sanctuary where the magic of books came to life. The website's shelves expanded with each passing day, offering an 
-  ever-expanding collection of tales that captured the hearts of readers around the globe.</p>
+  sanctuary where the magic of books came to life. The website's shelves expanded with each passing day, offering a
+  collection of tales that captured the hearts of readers.</p>
 
   <p> 
   Dear reader, whether you're a brave adventurer, a curious dreamer, 
   or a lover of magical tales, come join the enchanting world of BeeBooks. 
-  Open the virtual pages, immerse yourself in the stories, and let your imagination soar to new heights. 
-  The wonders of the written word await you, ready to whisk you away on unforgettable journeys. 
-  Welcome to Storyland Adventures, 
-  where every page is a gateway to endless possibilities.
   </p>
               
           </div>
         </div>
         
       </div>
-      </Container>
-      </div>
-         
 
 
       <h3 className="valueT"> Our Values</h3>
@@ -83,8 +76,8 @@ storytelling and a desire to ignite the spark of imagination in every child's he
       <h2>Education</h2>
       <p>
        We strive to provide 
-      stories that not only entertain but also teach valuable life lessons, 
-      instilling core values such as kindness, empathy, and resilience in our young readers.
+      stories that not only entertain but also teach valuable lessons, 
+       such as kindness, empathy, and resilience in our young readers.
       </p>
   </div>
 </div>
@@ -104,6 +97,11 @@ storytelling and a desire to ignite the spark of imagination in every child's he
   </div>
 </div>
 </div>
+
+
+      </Container>
+      </div>
+         
 </div>
      
 
