@@ -1,19 +1,4 @@
 /* HOMEPAGE style */
-/* :root {
-    --imageSize: 300px
-}
-
-.row {
-    height: auto;
-}
-#image {
-    height: var(--imageSize);
-    width: var(--imageSize);
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center;
-} */
-
 
 :root{
 	--blue: #A8D1D1;
@@ -36,6 +21,13 @@
   font-family: 'AlikeAngular';
   color: var(--textdark2);
   margin-bottom: 30px;
+
+}
+
+#topSearch {
+background-color: white !important;
+padding: 20px 0 40px;
+margin: 0 -12px;
 
 }
 

@@ -3,6 +3,7 @@ import "./bookapi.css";
 import axios from 'axios';
 import BookCard from './../BookCard'
 import Row from "./../Row";
+import Container from "./../Container";
 
 
 const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=children+subject:";
@@ -31,7 +32,7 @@ const BookApi = ({searchQuery}) => {
   }, [searchQuery]);
 
   return (
-    <div className="container mx-auto mt-5" id="bookResults">
+    <Container className="container mx-auto mt-5" id="bookResults">
       <h2 className="mb-4">Book Search Results:</h2>
             
       <Row id="bookInfo">
@@ -47,7 +48,7 @@ const BookApi = ({searchQuery}) => {
        ))}
       </Row>
       
- </div>
+ </Container>
 
   );
 
