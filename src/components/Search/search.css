@@ -26,13 +26,13 @@
     color: var(--forestGreen);
   }
 
-  #contactForm .btn {
+  /* #contactForm .btn {
     border: 1px solid var(--forestGreen)!important; 
     border-radius: 25px !important;
     color: var(--forestGreen);
     margin-bottom: 20px;
     background-color: white !important;
-  }
+  } */
 
 
 input.me-2.form-control{
@@ -40,3 +40,10 @@ input.me-2.form-control{
   border: 1px solid var(--blue);
 }
 
+/* button.btn.btn-outline-success {
+  border: 1px solid var(--blue); 
+  border-radius: 25px !important;
+  color: var(--lightblue);
+  margin-bottom: 20px;
+  
+} */

@@ -18,7 +18,7 @@ const Home = () => {
       
       <div className="home">
         <section id="topSearch">
-        <h3> Find The Right Book For You </h3>
+        <h3> Start Your Quest To Find The Perfect Books </h3>
           <Row className="row"> 
             <Column size="md-12">
               <Search onSearch={handleSearch} />
@@ -37,3 +37,5 @@ const Home = () => {
 }
  
 export default Home;
+
+{/* <h3>  Let The Joy Of Reading Begin </h3> */}
