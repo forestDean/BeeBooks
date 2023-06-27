@@ -29,31 +29,24 @@ height: 90%;
   margin-left:-12px !important;
 }
 
-
-
-
-
-
-/* VALUE */
+/* VALUES */
 
 .valueT{
   font-size: 30px;
   text-align: left;
   font-family: sans-serif;
   color: var(--blue);
-  margin-left: 5%;
-  
-    
+  margin-left: 5%;  
 }
 
 .card-containers {
-    position: relative;
+    /* position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 100px 50px;
+    flex-wrap: wrap; */
+    /* gap: 100px 50px; */
     padding: 100px 50px;
   }
   

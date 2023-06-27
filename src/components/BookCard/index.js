@@ -1,6 +1,6 @@
 import Column from "../Column";
 import "./bookcard.css";
-// import Column from "./../Column";
+
 
 
 const BookCard = (props) => {
