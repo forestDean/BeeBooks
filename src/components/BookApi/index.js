@@ -32,7 +32,7 @@ const BookApi = ({searchQuery}) => {
 
   return (
     <div className="container mx-auto mt-5" id="bookResults">
-      {/* <h2 className="mb-4">Book Search Results:</h2> */}
+      <h2 className="mb-4">Book Search Results:</h2>
             
       <Row id="bookInfo">
         {books.map((book) => (

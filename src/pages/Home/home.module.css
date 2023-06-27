@@ -15,24 +15,28 @@
 } */
 
 
-/* .jumbotron{
-    width: 100%;
-    background-image: url(../../assets/images/image1.jpg);
-    background-position: center;
-    background-size: cover;
-    opacity: .9;
-    height: calc(100vh - 150px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  } */
+:root{
+	--blue: #A8D1D1;
+	--lightblue: #DFebeb;
+	--green: #DAE5D0;
+	--beige: #F9EBC8;
+  --lighbeige: #f5f2eb;
+	--blue3: #A0BCC2;
+  --textdark: #5a8291;
+  --yellow: #f6ec85;
+  --textdark2:#5ea8a8;
+
+}
 
 
-  h3{
-    text-align: center;
-    font-size: 20px;
-  }
+ h3{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'AlikeAngular';
+  color: var(--textdark2);
+  margin-bottom: 30px;
+
+}
 
   

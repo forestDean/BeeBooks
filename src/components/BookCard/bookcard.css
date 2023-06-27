@@ -183,23 +183,22 @@ button.btn{
 
 
 /* IF THE GRID IS APPLIED */
-/* #bookInfo{
-   display: grid;
-  grid-template-columns: repeat(2, 760px);
+
+#bookInfo{
+  display: grid;
+  grid-template-columns: repeat(2, 750px);
   grid-auto-flow: row;
- padding-right: 100%;
-}   */
+ margin-left: 5%;
+
+ }  
 
 article{ 
   box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
   filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
-	background-color: #f5f2eb;
+	background: #f5f2eb;
 	border-radius: 15px;
   border:1px solid rgb(207, 206, 206);
 	overflow: hidden;
-  /* width: 400px !important; */
-  margin-right: 25px !important;
-  min-height: 500px;
 }
 
 /* TEXT */
@@ -236,7 +235,7 @@ small{
   position: relative;
   float:left;
   width: 130px;
-  /* margin-left: 20px; */
+  margin-left: 20px;
   margin-right: 20px;
   box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
   filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
@@ -246,29 +245,30 @@ small{
 
  /* BUTTON */
  .btn.outline.my-4{
-  width: 80%;
+  width: 95%;
   border: none;
   padding: 12px 24px;
   border-radius: 24px;
-  font-size: 18px;
+  font-size: 12px;
+  font-size: 0.8rem;  
   letter-spacing: 2px;  
   cursor: pointer;
 
 }
 
 .btn.outline.my-4 {
-  background: rgba(0, 212, 255, 0.9);
+  background: var(--blue);
   color: white;
   font-style: bold;
-  border: 1px solid rgba(0, 212, 255, 0.6);
+  border: 1px solid var(--blue);
   transition: all .3s ease;
   
 }
 
 .btn.outline.my-4:hover{
   transform: scale(1.1);
-  background: var(--green);
-  border-color: var(--green);
+  background: #d5ebeb;
+  border-color: #d5ebeb;
   transition: all .3s ease;  
 }
 
@@ -276,12 +276,12 @@ small{
 
 /* MEDIA QUERY */
 @media (max-width: 576px) { 
-  /* #bookInfo{
+  #bookInfo{
     display: grid;
    grid-template-columns: repeat(1, 750px);
    grid-auto-flow: row;
- } */
- img{
+ }
+ article >img{
   width: 90px;
  }
  .fst-italic{
@@ -304,17 +304,17 @@ button.btn{
 }
 
 @media (max-width: 768px) { 
-  /* #bookInfo{
+  #bookInfo{
     display: grid;
    grid-template-columns: repeat(1, 750px);
    grid-auto-flow: row;
-  } */
+  }
   .fst-italic{
     font-size: 13px;
     margin-left: -40%; 
   }
 
-  img{
+  article >img{
     width: 100px;
    }
 
@@ -326,13 +326,21 @@ button.btn{
 }
 
 @media (max-width: 992px) {
-  /* #bookInfo{
+  #bookInfo{
     display: grid;
     grid-template-columns: repeat(1, 750px);
     grid-auto-flow: row;
-  } */
+  }
   #isbn{
     margin-left: -20%;
   
+  }
+}
+
+
+@media (max-width: 1200px) {
+  #bookInfo{
+    display: grid;
+    grid-template-columns: repeat(1, 750px); 
   }
 }

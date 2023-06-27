@@ -15,24 +15,29 @@ const Home = () => {
   };
 
     return (  
-      <div>
+      <div className="home"> 
+      <h3> Find The Right Book For You </h3>
+       <Row className="row"> 
+          <Column size="md-12">
+            <Search onSearch={handleSearch} />
+          </Column>
+        </Row>
+    
+        <Row className="row">   
+             
+          <Column size="md-12">
+          <div className="App">
+            <header className="App-header">
+            </header>
+            <BookApi searchQuery={searchQuery}/>
+          </div>
+          </Column>
 
-        <header className="topSearch bg-white p-3">
-          <h3> Find The Right Book For You </h3>
-          <Row className="row"> 
-            <Column size="md-12">
-              <Search onSearch={handleSearch} />
-            </Column>
-          </Row>
-        </header>
-      
-          <Row className="row">                 
-            <Column size="md-12">
-              <BookApi searchQuery={searchQuery}/>
-            </Column>
-          </Row>
+        </Row>
 
-      </div>
+    </div>
+
+   
     );
 }
  
