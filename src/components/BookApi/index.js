@@ -31,8 +31,8 @@ const BookApi = ({searchQuery}) => {
   }, [searchQuery]);
 
   return (
-    <setion className="mx-auto mt-5" id="bookResults">
-      <h2 className="mb-4">Book Search Results:</h2>
+    <section className="mx-auto mt-5" id="bookResults">
+      <h2 className="my-4 mx-auto">Book Search Results:</h2>
             
       <Row className="bookInfo">
         {books.map((book) => (
@@ -47,7 +47,7 @@ const BookApi = ({searchQuery}) => {
        ))}
       </Row>
       
- </setion>
+ </section>
 
   );
 
