@@ -2,23 +2,25 @@ import React, { useEffect, useState } from 'react';
 import "./bookapi.css";
 import axios from 'axios';
 import BookCard from './../BookCard'
-import Row from "./../Row";
+// import Search from './../Search'
 
-
-const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=children+subject:";
+const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=children";
 // const APIKEY = "&key=AIzaSyAsBgCpq65SZuym7PV66Qi1qfp_5xIdA0w";
 const APIKEY = "&key=AIzaSyDJb8eCbCaQMV3JI-J2ykpXTsYZQDB_yxE";
 
 
-const BookApi = ({searchQuery}) => {
+const BookApi = () => {
+
   const [books, setBooks] = useState([]);
 
-  useEffect(() => {
-    const getData = async () => {
-      console.log('Search query @API:', searchQuery);
-      console.log('Search query URL:', (BASEURL + searchQuery + APIKEY));
+
+
+  useEffect((event) => {
+    const query = "+subject:foxes";
+    event.preventDefault();
+    const fetchData = async () => {
       try {
-        const response = await axios.get(BASEURL + searchQuery + APIKEY );
+        const response = await axios.get(BASEURL + query + APIKEY );
         setBooks(response.data.items);
         console.log(response);
       } catch (error) {
@@ -26,18 +28,19 @@ const BookApi = ({searchQuery}) => {
       }
     };
 
- // Trigger the API when the searchQuery prop changes in Search component
-    getData();
-  }, [searchQuery]);
-
+    fetchData();
+  }, 
+  [] //check this
+  );
+  
   return (
-    <setion className="mx-auto mt-5" id="bookResults">
+    <div className="mx-auto" id="bookResults">
       <h2 className="mb-4">Book Search Results:</h2>
             
-      <Row className="bookInfo">
+      <div id="bookInfo">
         {books.map((book) => (
           <BookCard 
-          key={book.id}
+          id={book.id}
           title={book.volumeInfo.title}
           author={book.volumeInfo.authors}
           image={book.volumeInfo.imageLinks && ( <img src={book.volumeInfo.imageLinks.thumbnail} alt="Book Thumbnail" /> )}
@@ -45,9 +48,9 @@ const BookApi = ({searchQuery}) => {
           isbn={book.volumeInfo.industryIdentifiers[0].identifier}
           />
        ))}
-      </Row>
+   </div>
       
- </setion>
+ </div>
 
   );
 

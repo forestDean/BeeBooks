@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import "./bookapi.css";
 import axios from 'axios';
 import BookCard from './../BookCard'
-import Row from "./../Row";
-
 
 const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=children+subject:";
 // const APIKEY = "&key=AIzaSyAsBgCpq65SZuym7PV66Qi1qfp_5xIdA0w";
@@ -31,10 +29,10 @@ const BookApi = ({searchQuery}) => {
   }, [searchQuery]);
 
   return (
-    <setion className="mx-auto mt-5" id="bookResults">
+    <div className="mx-auto" id="bookResults">
       <h2 className="mb-4">Book Search Results:</h2>
             
-      <Row className="bookInfo">
+      <div id="bookInfo">
         {books.map((book) => (
           <BookCard 
           key={book.id}
@@ -45,9 +43,9 @@ const BookApi = ({searchQuery}) => {
           isbn={book.volumeInfo.industryIdentifiers[0].identifier}
           />
        ))}
-      </Row>
+   </div>
       
- </setion>
+ </div>
 
   );
 
