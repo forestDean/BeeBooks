@@ -35,4 +35,3 @@ const Search = ({ onSearch }) => {
 }
 
 export default Search;
-{/* <Button type="submit" variant="outline-success">Search</Button> */}

@@ -34,7 +34,14 @@ const BookApi = ({searchQuery}) => {
           // Choose first 10 books
           const selectedBooks = response.slice(0, 10);
           console.log(selectedBooks);
-          setBooks(selectedBooks);
+          // save to Local Storage
+          const stringifiedData = JSON.stringify(selectedBooks);
+          localStorage.setItem('selectedBooks', stringifiedData);
+          console.log('API response saved to local storage.');
+
+          const displayBooks = JSON.parse(localStorage.getItem("selectedBooks"));
+
+          setBooks(displayBooks);
 
         }
         shuffleResponse(response.data.items);

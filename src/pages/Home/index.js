@@ -9,8 +9,17 @@ import Search from "../../components/Search";
 
 
 const Home = () => {
-  const [searchQuery, setSearchQuery] = useState("foxes");
+  // if (typeof localStorage !== if (typeof localStorage !== 'undefined') {) {
+  //   // localStorage is available
+  //   console.log('localStorage is supported.');
+  // } else {
+  //   // localStorage is not available
+  //   console.log('localStorage is not supported.');
+  // }
 
+  // if (typeof localStorage == 'undefined') {
+  const [searchQuery, setSearchQuery] = useState("foxes");
+  // }
   const handleSearch = (searchQuery) => {
     setSearchQuery(searchQuery);
     // console.log('Search query @Home:', searchQuery);
