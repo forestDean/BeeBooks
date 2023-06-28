@@ -20,7 +20,7 @@
   text-align: center;
   font-size: 35px;
   font-family: 'AlikeAngular';
-  color: #273b42;
+  color: var(--textdark);
   width: 500px;
 }
 

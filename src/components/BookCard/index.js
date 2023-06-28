@@ -18,7 +18,7 @@ const BookCard = (props) => {
             <h3>{props.title}</h3>
             <p className="author">by {props.author}</p>
             {props.image}
-            <p id="description" className="fst-italic">{props.description}</p>
+            <p id="description" className="fst-italic" >{props.description}</p>
             <small className="fixed-bottom" id="isbn">ISBN: {props.isbn}</small>
             <button type="button" id="shopButton" onClick={goShop} className="btn outline mb-4 fixed-bottom">SHOP</button>
         </article>
