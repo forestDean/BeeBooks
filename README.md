@@ -9,7 +9,7 @@
   - [Installation](#installation)
   - [User-Story](#user-story)
   - [Usage](#usage)
-  - [Future-Development](#future-development)
+  - [Road-Map](#road-map)
   - [Demo](#demo)
   - [Technologies-Used](#technologies-used)
   - [Credits](#credits)
@@ -19,54 +19,53 @@
 --- 
 
 ## Description
-"BeeBooks" is a children's book search webpage, designed to empower children and their parents to discover and explore a wide range of captivating books tailored to young readers. The webpage aims to provide an engaging and user-friendly experience that encourages reading, sparks imagination, and fosters a lifelong love for books. Through intuitive search features, book recommendations, and community engagement, the webpage creates a digital gateway to a world of enchanting stories, educational resources, and literary adventures.
-Overall, BeeBooks endeavors to create an immersive and educational digital platform that sparks the imaginations of young readers, cultivates their reading habits, and encourages a lifelong passion for books.
+BeeBooks is a children's book search app, designed to empower children and their parents to discover and explore a wide range of captivating books tailored to young readers. The app aims to provide an engaging and user-friendly experience that encourages reading, sparks imagination, and fosters a lifelong love for books. 
+It creates a gateway to a world of enchanting stories and literary adventures.
+
 
 --- 
 
 ## Installation
  
 - Link to deployed website:  https://beebooks.netlify.app/ 
---- 
-
-- Clone the GitHub repository to your computer.
-- Navigate to your terminal and use the following command "npm install create-react-app".
-- Navigate to your terminal and use the following command "npm start".
-
  
 ---
 
 ## User Story 
 - As a user, I want to see a search bar prominently displayed on the homepage, so I can easily start looking for books.
 - As a user, I want each book displayed with an eye-catching cover image, title, author, and a brief description.
-- As a user, I want the website to be user-friendly, with simple navigation and clear instructions.
-- As a user, I want to be greeted with a friendly and colourful homepage.
+- As a user, I want the app to be user-friendly, with simple navigation and clear instructions.
+
 
 
 ---
 
 
 ## Usage
-- A prominent search bar allows users to easily find books by title, author, or keywords.
+- A prominent search bar allows users to easily find children's books by title, author, or keywords.
+![Header](./src/assets/screenshots/header.png)
 - Provide comprehensive book information, including cover images, titles and authors. 
-- Design an intuitive and visually appealing interface with colorful and child-friendly aesthetics.
-- Ensure seamless navigation, clear instructions, and responsive design across various devices.
+![Card](./src//assets/screenshots/card.png)
+- Design an intuitive and visually appealing interface with colourful and child-friendly aesthetics.
+- Ensure seamless navigation, clear instructions and responsive design across various devices.
+![Responsive](./src/assets/screenshots/mobile.gif)
+- The web app contains three page - Home, About and Contact.
+- Email JS was used to build the contact form.
 
 
 
 ---
 
-## Future Development 
-- Browse books by categories, genres, age ranges, and themes, enabling users to explore specific interests and preferences.
-- Implement robust filtering options to refine search results based on age group, reading level, popularity, and more.
+## Road Map
+- Allow users to store wishlist books and to create personal reading lists.
+- Browse children's books by categories, genres, age ranges, and themes, enabling users to explore specific interests and preferences.
 - Sort books by relevance, rating, or release date to help users find the most suitable options.
 - Enable users to access reader reviews and ratings for each book, promoting informed decision-making and community interaction.
-- Allow users to create personal reading lists, wishlist books, and receive notifications for new releases or recommended titles.
-- Offer convenient options for purchasing books directly from the webpage, connecting users with online bookstores or local retailers.
+
 
 
 ## Demo
-![Demo](./src/images/demo.gif);
+![Demo](./src/assets/screenshots/demo.gif);
 
 ---
 
@@ -76,16 +75,17 @@ Overall, BeeBooks endeavors to create an immersive and educational digital platf
 - Node Js
 - Google Book API
 - Netlify
-- Email Js
-- Axios GET/POST 
-- React-Bootstrap package
+- Email JS /POST
+- Axios /GET
+- React-Bootstrap & Bootstrap 5
+- React-Icons Library
 
 ---
 
 ## Credits
 - John Walton
 - Lubomila Lozanova
-- 
+- Max Sparrey
 
 
 ---
