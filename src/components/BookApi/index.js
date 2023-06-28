@@ -6,6 +6,7 @@ import Row from "./../Row";
 
 
 const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=children+subject:";
+const NUMBER = "&maxResults=40";
 // const APIKEY = "&key=AIzaSyAsBgCpq65SZuym7PV66Qi1qfp_5xIdA0w";
 const APIKEY = "&key=AIzaSyDJb8eCbCaQMV3JI-J2ykpXTsYZQDB_yxE";
 
@@ -16,20 +17,27 @@ const BookApi = ({searchQuery}) => {
   useEffect(() => {
     const getData = async () => {
       console.log('Search query @API:', searchQuery);
-      console.log('Search query URL:', (BASEURL + searchQuery + APIKEY));
+      console.log('Search query URL:', (BASEURL + searchQuery + NUMBER + APIKEY));
       try {
-        const response = await axios.get(BASEURL + searchQuery + APIKEY );
+        const response = await axios.get(BASEURL + searchQuery + NUMBER + APIKEY );
+        console.log('Response Code: ', response.status);
+
         // Randomise with Fisher-Yates Algorithm
-        const shuffleArray = array => {
-          for (let i = array.length - 1; i > 0; i--) {
+        const shuffleResponse = response => {
+          for (let i = response.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            const temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
+            const temp = response[i];
+            response[i] = response[j];
+            response[j] = temp;
           }
-          console.log(array);
+
+          // Choose first 10 books
+          const selectedBooks = response.slice(0, 10);
+          console.log(selectedBooks);
+          setBooks(selectedBooks);
+
         }
-        shuffleArray(response.data.items);
+        shuffleResponse(response.data.items);
 
         // setBooks(response.data.items);
         // console.log(response);
