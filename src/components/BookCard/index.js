@@ -28,11 +28,12 @@ const BookCard = (props) => {
                 <p className="author">by {props.author}</p>
                 {props.image}
                 <p id="description" className="fst-italic">{props.description}</p>
-                <button className="fixed-bottom" onClick={revealText}>Click to reveal</button>
+                <button className="fixed-bottom" onClick={revealText}>...</button>
+                {/* <div className="opaque"></div> */}
             </div>
             <div className="cardfooter fixed-bottom">
-            <small className="fixed-bottom" id="isbn">ISBN: {props.isbn}</small>
-            <button type="button" id="shopButton" onClick={goShop} className="btn outline mb-4 fixed-bottom">SHOP</button>
+                <small className="fixed-bottom" id="isbn">ISBN: {props.isbn}</small>
+                <button type="button" id="shopButton" onClick={goShop} className="btn outline mb-4 fixed-bottom">SHOP</button>
             </div>
         </article>
     </Column> 
