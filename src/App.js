@@ -13,7 +13,7 @@ import Container from "./components/Container";
 const App = () => {
   return (
       <Router>
-        <Container>
+        <Container className="page">
           <Header />
           <Wrapper>
             <Routes>

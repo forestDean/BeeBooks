@@ -36,9 +36,9 @@
     color: var(--lightblue);
   }
 
+  /* Back-to-Top Button */
   .btt {
     border: 1px dashed white !important;
-    height:90px;
-    width:50px;
-    /* visibility: hidden; */
+    height:100px;
+    opacity: 0;
   }

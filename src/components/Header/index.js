@@ -16,7 +16,7 @@ import logo from '../../assets/images/beelogo.png';
 const Header = () => {
 return (
 
-  <header>    
+  <header id="header">    
     <Navbar expand="lg" className="navbar">
         <Container className="navbarMenu">
           <Navbar.Brand href="/"> 
