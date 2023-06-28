@@ -59,7 +59,7 @@ const BookApi = ({searchQuery}) => {
 
   return (
     <section className="mx-auto mt-5" id="bookResults">
-      <h2 className="my-4 mx-auto">Book Search Results:</h2>
+      <h2 className="my-4 mx-auto p-2">Book Search Results:</h2>
             
       <Row className="bookInfo">
         {books.map((book) => (

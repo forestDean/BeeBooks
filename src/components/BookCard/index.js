@@ -12,7 +12,7 @@ const BookCard = (props) => {
         window.open(url, '_blank');
     };
 
-        const [isVisible, setIsVisible] = useState(true);
+        const [isVisible, setIsVisible] = useState(false);
       
         const revealText = () => {
           setIsVisible(!isVisible);
