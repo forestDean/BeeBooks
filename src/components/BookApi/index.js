@@ -19,8 +19,20 @@ const BookApi = ({searchQuery}) => {
       console.log('Search query URL:', (BASEURL + searchQuery + APIKEY));
       try {
         const response = await axios.get(BASEURL + searchQuery + APIKEY );
-        setBooks(response.data.items);
-        console.log(response);
+        // Randomise with Fisher-Yates Algorithm
+        const shuffleArray = array => {
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+          }
+          console.log(array);
+        }
+        shuffleArray(response.data.items);
+
+        // setBooks(response.data.items);
+        // console.log(response);
       } catch (error) {
         console.error(error);
       }
