@@ -12,7 +12,7 @@ class Footer extends Component {
       return (
 
     <div className="footer d-flex justify-content-between align-items-center" role="button">
-	  <div className="btt w-25" role="button"><a class="w-100 h-100 btn btn-lg btn-block" href="#header">#</a> </div>
+	  <div className="btt w-25" role="button"><a className="w-100 h-100 btn btn-lg btn-block" href="#header">#</a> </div>
 
 		<div className="midFooter text-center w-50">
 			<div className="socialMedia"> 
@@ -33,7 +33,7 @@ class Footer extends Component {
 		</div>
 
 
-		<div className="btt w-25" role="button"><a class="w-100 h-100 btn btn-lg btn-block" href="#header">#</a> </div>
+		<div className="btt w-25" role="button"><a className="w-100 h-100 btn btn-lg btn-block" href="#header">#</a> </div>
 	</div>
 	
       );
