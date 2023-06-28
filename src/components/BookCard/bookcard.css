@@ -25,6 +25,12 @@ article{
   padding: 20px 40px;
 }
 
+.summary {
+border: 1px dashed black;
+height:400px;
+overflow: hidden;
+}
+
 .fst-italic {
   font-family: 'EB Garamond', serif;
 	text-align: left;
@@ -51,13 +57,12 @@ small{
 }
 
 #isbn{
-margin-bottom:90px;
-
+  margin-bottom:90px;
 }
 
  /* IMAGE */
 
-article >img{
+article >div >img{
   position: relative;
   float:left;
   margin: 8px 30px 20px 0;
