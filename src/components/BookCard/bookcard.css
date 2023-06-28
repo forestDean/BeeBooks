@@ -27,9 +27,18 @@ article{
 
 .summary {
 border: 1px dashed black;
-height:400px;
-overflow: hidden;
 }
+
+.hidden {
+  overflow: hidden;
+  height: 400px;
+  transition: height 0.3s ease;
+}
+
+.visible {
+  height: auto;
+}
+
 
 .fst-italic {
   font-family: 'EB Garamond', serif;
