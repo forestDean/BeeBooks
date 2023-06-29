@@ -1,6 +1,6 @@
 /* BOOKCARD styling */
 
-:root{
+:root {
 	--blue: #A8D1D1;
 	--lightblue: #DFebeb;
 	--green: #DAE5D0;
@@ -14,7 +14,7 @@
 
 /* TEXT */
 
-article{ 
+article { 
   box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.4);
   filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.4));
 	background-color: #f5f2eb;
@@ -25,13 +25,7 @@ article{
   padding: 20px 40px;
 }
 
-.summary {
-/* border: 1px dashed black; */
-
-}
-
 .hidden {
-  /* overflow: hidden; */
   height: 620px;
   transition: height 0.4s ease;
 }
@@ -44,7 +38,6 @@ article{
 }
 
 .summary >button {
-  /* background-color: #f5f2ebbb;  */
   background-color: #f5f2eb;
   margin-bottom: 130px;
   color: black;
@@ -52,15 +45,7 @@ article{
   text-align: right;
   opacity: 70%;
   height: 30px !important;
-  /* border: 1px dashed grey !important; */
   border: 0 !important;
-}
-
-.opaque {
-	/* background-color: rgba(245, 242, 235, 0.466);
-	background-color: red;
-  width: 100%;
-  height:130px; */
 }
 
 .cardfooter {
@@ -76,25 +61,25 @@ article{
   color: #394e57;  
 }
 
-small{
+small {
   font-style: italic;
   font-size: 11px;
   color: black;
 }
 
-.bookCard h3{
+.bookCard h3 {
   color: #99DBF5;
   margin-top: 25px;
   font-family: 'Lato';
  }
 
-.author{
+.author {
   color: #5a8291;
   margin-bottom: 30px;
   font-family: 'Lato';
 }
 
-#isbn{
+#isbn {
   margin-bottom:90px;
 }
 
@@ -137,23 +122,17 @@ article >div >img{
 /* MEDIA QUERY */
 @media (max-width: 576px) { 
 
- article >img {
-  width: 90px;
- }
+  article >img {
+    width: 90px;
+  }
 
-/* .fst-italic {
-	font-size: 12px;
-  margin-left: -40%; 
-} */
+  .bookCard h3 {
+    font-size: 20px;
+  }
 
-
-.bookCard h3 {
-font-size: 20px;
-}
-
-#shopButton {
-  width: 70%;
-}
+  #shopButton {
+    width: 70%;
+  }
 }
 
 @media (max-width: 768px) { 
@@ -164,15 +143,6 @@ font-size: 20px;
 
   article >img{
     width: 100px;
-   }
-
-}
-
-@media (max-width: 992px) {
-
-}
-
-
-@media (max-width: 1200px) {
+  }
 
 }

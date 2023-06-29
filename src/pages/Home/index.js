@@ -8,9 +8,7 @@ import Search from "../../components/Search";
 
 const Home = () => {
 
-  // if (typeof localStorage == 'undefined') {
   const [searchQuery, setSearchQuery] = useState("foxes");
-  // }
   const [submitError, setSubmitError] = useState('');
   const [dataNull, setDataNull] = useState('');
 
@@ -42,4 +40,3 @@ const Home = () => {
 }
  
 export default Home;
-

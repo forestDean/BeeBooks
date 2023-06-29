@@ -14,31 +14,22 @@
 
 
 .form {
-    margin: 20px;
-  }
+  margin: 20px;
+}
   
-  .form input {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
 
-  }
+}
 
-  #HelpBlock {
-    padding-left: 10px;
-  }
+#HelpBlock {
+  padding-left: 10px;
+}
 
-  /* #contactForm .btn {
-    border: 1px solid var(--forestGreen)!important; 
-    border-radius: 25px !important;
-    color: var(--forestGreen);
-    margin-bottom: 20px;
-    background-color: white !important;
-  } */
-
-
-input.me-2.form-control{
+input.me-2.form-control {
   background-color: var(--lightblue);
   border: 1px solid var(--blue);
   color: var(--forestGreen);
@@ -55,7 +46,7 @@ button.btn.btn-outline-success {
   background-color: var(--blue);
 }
 
-button.btn.btn-outline-success:hover{
+button.btn.btn-outline-success:hover {
   background-color: #f5f2eb;
   color: var(--textdark);
   border: 1px solid var(--textdark);

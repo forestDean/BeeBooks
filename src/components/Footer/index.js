@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import "./footer.css";
-// import Row from "../../components/Row";
-
-
 import { FaFacebook } from 'react-icons/fa';
 import {FaInstagram} from 'react-icons/fa';
 import {MdEmail} from 'react-icons/md'

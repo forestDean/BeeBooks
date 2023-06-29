@@ -39,9 +39,6 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
           console.log(filteredData);
           console.log("OK");
 
-
-
-
           // Randomise with Fisher-Yates Algorithm
           const shuffleResponse = response => {
             for (let i = response.length - 1; i > 0; i--) {
@@ -54,6 +51,7 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
             // Choose first 10 books
             const selectedBooks = response.slice(0, 10);
             console.log(selectedBooks);
+
             // save to Local Storage
             const stringifiedData = JSON.stringify(selectedBooks);
             localStorage.setItem('selectedBooks', stringifiedData);
@@ -65,7 +63,6 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
             
           }
           
-        // shuffleResponse(response.data.items); // trigger shuffle
         shuffleResponse(filteredData); // trigger shuffle
 
         // } else {
