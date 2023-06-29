@@ -17,11 +17,10 @@ const Search = ({ onSearch, submitError, dataNull }) => {
     if (searchQuery.trim() === '') {
       errors.search = '*A keyword is required.  ';
       console.log('*A keyword is required');
-    } else {
-      errors.search = false;
     }
+    console.log(searchQuery + " @Search")
 
-    // If errors, update State and STOP
+    // // If errors, update State and STOP
     if (Object.keys(errors).length) {
       setErrors(errors);
       return;
