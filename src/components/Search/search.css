@@ -26,6 +26,10 @@
     color: var(--forestGreen);
   }
 
+  #HelpBlock {
+    padding-left: 10px;
+  }
+
   /* #contactForm .btn {
     border: 1px solid var(--forestGreen)!important; 
     border-radius: 25px !important;

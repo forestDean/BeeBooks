@@ -11,10 +11,11 @@ const NUMBER = "&maxResults=40";
 const APIKEY = "&key=AIzaSyDJb8eCbCaQMV3JI-J2ykpXTsYZQDB_yxE";
 
 
-const BookApi = ({searchQuery}) => {
+const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
+    
     const getData = async () => {
       console.log('Search query @API:', searchQuery);
       console.log('Search query URL:', (BASEURL + searchQuery + NUMBER + APIKEY));
@@ -22,43 +23,50 @@ const BookApi = ({searchQuery}) => {
         const response = await axios.get(BASEURL + searchQuery + NUMBER + APIKEY );
         console.log('Response Code: ', response.status);
 
-        // Randomise with Fisher-Yates Algorithm
-        const shuffleResponse = response => {
-          for (let i = response.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            const temp = response[i];
-            response[i] = response[j];
-            response[j] = temp;
+        if (response.data) {
+          // setDataNull(false); // Successful data retrieval
+
+          // Randomise with Fisher-Yates Algorithm
+          const shuffleResponse = response => {
+            for (let i = response.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              const temp = response[i];
+              response[i] = response[j];
+              response[j] = temp;
+            }
+
+            // Choose first 10 books
+            const selectedBooks = response.slice(0, 10);
+            console.log(selectedBooks);
+            // save to Local Storage
+            const stringifiedData = JSON.stringify(selectedBooks);
+            localStorage.setItem('selectedBooks', stringifiedData);
+            console.log('API response saved to local storage.');
+
+            const displayBooks = JSON.parse(localStorage.getItem("selectedBooks"));
+
+            setBooks(displayBooks);
+            
           }
+        shuffleResponse(response.data.items); // trigger shuffle
 
-          // Choose first 10 books
-          const selectedBooks = response.slice(0, 10);
-          console.log(selectedBooks);
-          // save to Local Storage
-          const stringifiedData = JSON.stringify(selectedBooks);
-          localStorage.setItem('selectedBooks', stringifiedData);
-          console.log('API response saved to local storage.');
-
-          const displayBooks = JSON.parse(localStorage.getItem("selectedBooks"));
-
-          setBooks(displayBooks);
-
+        } else {
+          setDataNull(true); // Set the "no data" error message
         }
-        shuffleResponse(response.data.items);
-
-        // setBooks(response.data.items);
-        // console.log(response);
+      
       } catch (error) {
         console.error(error);
+        setSubmitError(true);
+        // setDataNull(false);
       }
     };
 
- // Trigger the API when the searchQuery prop changes in Search component
+ // trigger the API when the searchQuery prop changes in Search component
     getData();
-  }, [searchQuery]);
+  }, [searchQuery, setSubmitError, setDataNull]);
 
   return (
-    <section className="mx-auto mt-5" id="bookResults">
+    <section className="mx-auto mt-4" id="bookResults">
       <h2 className="my-4 mx-auto p-2">Book Search Results:</h2>
             
       <Row className="bookInfo">
