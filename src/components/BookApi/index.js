@@ -26,6 +26,22 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
         if (response.data) {
           // setDataNull(false); // Successful data retrieval
 
+          //  ***************** filter results *****************
+
+          const filteredData = response.data.items.filter(item => 
+            item.volumeInfo.imageLinks && 
+            item.volumeInfo.imageLinks.thumbnail && 
+            item.volumeInfo.description !== '' && 
+            // item.volumeInfo.description.length < 740 && 
+            item.volumeInfo.maturityRating === 'NOT_MATURE'
+            );
+
+          console.log(filteredData);
+          console.log("OK");
+
+
+
+
           // Randomise with Fisher-Yates Algorithm
           const shuffleResponse = response => {
             for (let i = response.length - 1; i > 0; i--) {
@@ -48,10 +64,12 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
             setBooks(displayBooks);
             
           }
-        shuffleResponse(response.data.items); // trigger shuffle
+          
+        // shuffleResponse(response.data.items); // trigger shuffle
+        shuffleResponse(filteredData); // trigger shuffle
 
-        } else {
-          setDataNull(true); // Set the "no data" error message
+        // } else {
+        //   setDataNull(true); // Set the "no data" error message
         }
       
       } catch (error) {
@@ -78,6 +96,8 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
           image={book.volumeInfo.imageLinks && ( <img src={book.volumeInfo.imageLinks.thumbnail} alt="Book Thumbnail" /> )}
           description={book.volumeInfo.description}
           isbn={book.volumeInfo.industryIdentifiers[0].identifier}
+          type={book.volumeInfo.industryIdentifiers[0].type}
+
           />
        ))}
       </Row>
