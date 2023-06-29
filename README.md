@@ -56,9 +56,9 @@ It creates a gateway to a world of enchanting stories and literary adventures.
 ![Responsive](./src/assets/screenshots/mobile.gif)  
 
 - The web app contains three page - Home, About and Contact.
-- Email JS was used to build the contact form.
+- Email JS was used to build the contact form.  
 
-
+![Email](./src/assets/screenshots/email-message-600.png) 
 
 ---
 
