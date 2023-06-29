@@ -12,17 +12,16 @@ const BookCard = (props) => {
             window.open(url, '_blank');
         } else {
             const url = `https://www.google.com/search?q=${encodeURIComponent(props.isbn)}`;
-            // window.location.href = url;
             window.open(url, '_blank');
         }
     };
 
-        const [isVisible, setIsVisible] = useState(false);
-      
-        const revealText = () => {
-          setIsVisible(!isVisible);
-        };
-      
+    const [isVisible, setIsVisible] = useState(false);
+
+    const revealText = () => {
+        setIsVisible(!isVisible);
+    };
+
     return (
 
     <Column size="lg-6" id="bookInfo">
@@ -41,9 +40,7 @@ const BookCard = (props) => {
         </article>
     </Column> 
 
-    );
-
-    
+    ); 
 
 }
 

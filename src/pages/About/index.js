@@ -2,13 +2,11 @@ import React from "react";
 import '../About/about.css'
 import Column from "./../../components/Column";
 import Row from "./../../components/Row";
-
 import { Container} from "react-bootstrap";
 import beebook from '../../assets/images/image4.png'
 import child1 from '../../assets/images/child1.png'
 import child2 from '../../assets/images/child2.png'
 import child3 from '../../assets/images/child3.png'
-
 
 const About = () => {
 return (
@@ -71,6 +69,7 @@ return (
               </div>
           </div>
         </Column>
+
         <Column size="lg-4"> 
         {/* CARD2 */}
         <div className="card" >
@@ -87,6 +86,7 @@ return (
           </div>
         </div>
         </Column>
+
         <Column size="lg-4"> 
         {/* CARD3 */}
         <div className="card" >
@@ -108,9 +108,7 @@ return (
     </Container>
     </div>
          
-</div>
-     
-
+</div>     
     
 )
 }
