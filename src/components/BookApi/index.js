@@ -31,7 +31,7 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
           const filteredData = response.data.items.filter(item => 
             item.volumeInfo.imageLinks && 
             item.volumeInfo.imageLinks.thumbnail && 
-            item.volumeInfo.description !== '' && 
+            item.volumeInfo.description && 
             // item.volumeInfo.description.length < 740 && 
             item.volumeInfo.maturityRating === 'NOT_MATURE'
             );

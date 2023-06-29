@@ -15,7 +15,6 @@
 
 .form {
     margin: 20px;
-    border: 1px dashed red;
   }
   
   .form input {
@@ -23,7 +22,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
-    color: var(--forestGreen);
+
   }
 
   #HelpBlock {
@@ -42,12 +41,16 @@
 input.me-2.form-control{
   background-color: var(--lightblue);
   border: 1px solid var(--blue);
+  color: var(--forestGreen);
+  line-height: 40px !important;
+  font-size: 20px;
 }
 
 button.btn.btn-outline-success {
   border: 1px solid var(--blue); 
   border-radius: 25px !important;
   color: white;
+  font-size: 20px;
   font-style: bold;
   background-color: var(--blue);
 }
@@ -57,3 +60,28 @@ button.btn.btn-outline-success:hover{
   color: var(--textdark);
   border: 1px solid var(--textdark);
 }
+
+/* ================= RESPONSIVE MEDIA QUERIES - MOBILE FIRST ================= */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+#searchBar {
+  width: 60% !important;
+}
+
+input.me-2.form-control{
+  background-color: var(--lightblue);
+  border: 1px solid var(--blue);
+  color: var(--forestGreen);
+  line-height: 30px !important;
+}
+
+input.me-2.form-control{
+  font-size: 18px;
+}
+
+button.btn.btn-outline-success {
+  font-size: 18px;
+}
+} 

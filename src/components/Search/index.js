@@ -32,7 +32,7 @@ const Search = ({ onSearch, submitError, dataNull }) => {
   }; 
 
   return (  
-    <div id="searchBar" className="w-50 mx-auto">           
+    <div id="searchBar" className="w-75 mx-auto">           
       <Form onSubmit={handleSubmit} className="d-flex">
         <Form.Control
           type="text"
