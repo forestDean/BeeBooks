@@ -6,20 +6,14 @@ import BookApi from "../../components/BookApi";
 import Search from "../../components/Search";
 
 
-
-
 const Home = () => {
-  // if (typeof localStorage !== if (typeof localStorage !== 'undefined') {) {
-  //   // localStorage is available
-  //   console.log('localStorage is supported.');
-  // } else {
-  //   // localStorage is not available
-  //   console.log('localStorage is not supported.');
-  // }
 
   // if (typeof localStorage == 'undefined') {
   const [searchQuery, setSearchQuery] = useState("foxes");
   // }
+  const [submitError, setSubmitError] = useState('');
+  const [dataNull, setDataNull] = useState('');
+
   const handleSearch = (searchQuery) => {
     setSearchQuery(searchQuery);
     // console.log('Search query @Home:', searchQuery);
@@ -32,14 +26,14 @@ const Home = () => {
         <h3> Find The Perfect Children's Adventure </h3>
           <Row className="row"> 
             <Column size="md-12">
-              <Search onSearch={handleSearch} />
+              <Search submitError={submitError} dataNull={dataNull} onSearch={handleSearch} />
             </Column>
           </Row>
         </section>
 
         <Row className="bookResults">   
           <Column size="md-12">
-            <BookApi searchQuery={searchQuery}/>
+            <BookApi setSubmitError={setSubmitError} dataNull={setDataNull} searchQuery={searchQuery}/>
           </Column>
         </Row>
       </div>
