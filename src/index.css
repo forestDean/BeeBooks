@@ -24,9 +24,24 @@ body {
 body >img {opacity: 0.75;}
 
 .container {
-  width: 1000px !important;
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 0;
   height: auto;
+}
+
+
+/* ================= RESPONSIVE MEDIA QUERIES - MOBILE FIRST ================= */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+        width: 1000px !important;
+  }
+  
 }

@@ -23,14 +23,14 @@ const Home = () => {
         <section id="topSearch">
         <h3> Find The Perfect Children's Adventure </h3>
           <Row className="row"> 
-            <Column size="md-12">
+            <Column size="md-12" className="">
               <Search submitError={submitError} dataNull={dataNull} onSearch={handleSearch} />
             </Column>
           </Row>
         </section>
 
         <Row className="bookResults">   
-          <Column size="md-12">
+          <Column size="md-12" className="">
             <BookApi setSubmitError={setSubmitError} dataNull={setDataNull} searchQuery={searchQuery}/>
           </Column>
         </Row>
