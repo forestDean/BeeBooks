@@ -5,29 +5,34 @@ import Button from 'react-bootstrap/Button';
 
 const Search = ({ onSearch, submitError, dataNull }) => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [errors, setErrors] = useState("");
+  const [errors, setErrors] = useState({});
   
   const handleSubmit = (event) => {
     event.preventDefault();
 
     //  **************** Validate ****************
 
-    const errors = {};
+    const validationErrors = {};
 
     if (searchQuery.trim() === '') {
-      errors.search = '*A keyword is required.  ';
+      validationErrors.search = '*A keyword is required.  ';
       console.log('*A keyword is required');
     }
     console.log(searchQuery + " @Search")
 
-    // // If errors, update State and STOP
-    if (Object.keys(errors).length) {
-      setErrors(errors);
-      return;
+    // If errors, update State and STOP
+    if (Object.keys(validationErrors).length) {
+      setErrors(validationErrors);
+      // clear error message after 3 seconds
+      const timer = setTimeout(() => {
+        setErrors(false);
+      }, 3000);
+      return () => clearTimeout(timer);
     }
 
     // Pass the searchQuery to the onSearch prop function
     onSearch(searchQuery);
+    console.log(searchQuery + " @onSearch")
   }; 
 
   return (  
@@ -45,8 +50,7 @@ const Search = ({ onSearch, submitError, dataNull }) => {
         <Button type="submit" variant="outline-success">Search</Button>
       </Form>
       <Form.Text id="HelpBlock" muted>
-
-          {errors.search && <span>{errors.search}</span>}
+          {errors.search && <span id="nosearch">{errors.search}</span>}
           {submitError && <span id="error">Technical error!</span>}
           {dataNull && <span id="null">No results were found ...please try again...</span>}
       </Form.Text>

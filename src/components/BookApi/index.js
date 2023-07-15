@@ -4,19 +4,20 @@ import axios from 'axios';
 import BookCard from './../BookCard'
 import Row from "./../Row";
 
-
 const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=children+subject:";
 const NUMBER = "&maxResults=40";
 // const APIKEY = "&key=AIzaSyAsBgCpq65SZuym7PV66Qi1qfp_5xIdA0w";
 const APIKEY = "&key=AIzaSyDJb8eCbCaQMV3JI-J2ykpXTsYZQDB_yxE";
 
-
 const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
+
+    const savedBooks = localStorage.getItem('selectedBooks');
     
-    const getData = async () => {
+    // API function to retrieve Search results from Google Books
+    const getData = async (searchQuery) => {
       console.log('Search query @API:', searchQuery);
       console.log('Search query URL:', (BASEURL + searchQuery + NUMBER + APIKEY));
       try {
@@ -24,7 +25,8 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
         console.log('Response Code: ', response.status);
 
         if (response.data) {
-          // setDataNull(false); // Successful data retrieval
+          // Successful data retrieval
+          setDataNull(false); 
 
           //  ***************** filter results *****************
 
@@ -58,32 +60,41 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
             console.log('API response saved to local storage.');
 
             const displayBooks = JSON.parse(localStorage.getItem("selectedBooks"));
-
             setBooks(displayBooks);
             
           }
-          
-        shuffleResponse(filteredData); // trigger shuffle
+        // trigger shuffle 
+        shuffleResponse(filteredData); 
 
-        // } else {
-        //   setDataNull(true); // Set the "no data" error message
+        } else {
+          // Set the "no data" error message
+          setDataNull(true); 
         }
       
       } catch (error) {
         console.error(error);
         setSubmitError(true);
-        // setDataNull(false);
       }
     };
 
- // trigger the API when the searchQuery prop changes in Search component
-    getData();
+
+    if (searchQuery) {
+      // trigger the API when the searchQuery prop changes in Search component
+      getData(searchQuery);
+    } else if (savedBooks) {
+      // If data exists in localStorage, set it to State
+      setBooks(JSON.parse(savedBooks));
+    } else {
+      // set default searchQuery to 'foxes'
+      getData('foxes');
+    }
+
   }, [searchQuery, setSubmitError, setDataNull]);
 
   return (
     <section className="mx-auto mt-4" id="bookResults">
       <h2 className="my-4 mx-auto p-2">Book Search Results:</h2>
-            
+
       <Row className="bookInfo">
         {books.map((book) => (
           <BookCard 
@@ -97,12 +108,11 @@ const BookApi = ({ searchQuery, setSubmitError, setDataNull }) => {
 
           />
        ))}
-      </Row>
-      
- </section>
+      </Row> 
+
+    </section>
 
   );
-
 
 };
 
