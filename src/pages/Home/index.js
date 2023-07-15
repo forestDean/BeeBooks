@@ -8,7 +8,7 @@ import Search from "../../components/Search";
 
 const Home = () => {
 
-  const [searchQuery, setSearchQuery] = useState("foxes");
+  const [searchQuery, setSearchQuery] = useState('');
   const [submitError, setSubmitError] = useState('');
   const [dataNull, setDataNull] = useState('');
 
@@ -31,7 +31,7 @@ const Home = () => {
 
         <Row className="bookResults">   
           <Column size="md-12" className="">
-            <BookApi setSubmitError={setSubmitError} dataNull={setDataNull} searchQuery={searchQuery}/>
+            <BookApi setSubmitError={setSubmitError} setDataNull={setDataNull} searchQuery={searchQuery}/>
           </Column>
         </Row>
       </div>
